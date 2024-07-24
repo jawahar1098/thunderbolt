@@ -45,13 +45,18 @@ pipeline {
             steps {
                 // Frontend deployment steps (npm install)
                 dir('front_app') {
-                    // Ensure npm is installed
+                    // Ensure npm is installed (if not already installed globally)
                     script {
                         def npmInstalled = sh(script: 'which npm', returnStatus: true)
                         if (npmInstalled != 0) {
+                            // Optionally install npm if not already installed globally
                             sh 'sudo apt-get update && sudo apt-get install -y npm'
                         }
                     }
+
+                    // Use local Node.js version (assuming it's installed on the slave)
+                    def nodeBin = tool name: 'NodeJS', type: 'hudson.tools.InstallSourceProperty$ToolInstallation'
+                    env.PATH = "${nodeBin}/bin:${env.PATH}"
 
                     // Install npm dependencies
                     sh 'npm install'
@@ -61,5 +66,6 @@ pipeline {
                 }
             }
         }
+
     }
 }
