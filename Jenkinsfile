@@ -20,7 +20,7 @@ pipeline {
                     sh '. env/bin/activate'
 
                     // Start the Python backend application
-                    sh 'python wsgi.py &'
+                    sh 'python3 wsgi.py &'
                 }
             }
         }
