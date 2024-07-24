@@ -51,7 +51,7 @@ pipeline {
                 dir('front_app') {
                     // Reset PATH to include system npm and node
                     script {
-                        env.PATH = "/usr/local/bin:$env.PATH"
+                        env.PATH = "/home/node1/.nvm/versions/node/v22.5.1/bin:$env.PATH"
                     }
 
                     // Ensure npm is installed (assuming it's not in the virtual environment)
