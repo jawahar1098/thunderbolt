@@ -42,6 +42,10 @@ pipeline {
             agent {
                 label 'slavenode1' // Replace with your slave node label
             }
+            environment {
+                // Define an environment variable to hold Node.js installation path
+                NODEJS_HOME = tool name: 'NodeJS', type: 'jenkins.plugins.nodejs.tools.NodeJSInstallation'
+            }
             steps {
                 // Frontend deployment steps (npm install)
                 dir('front_app') {
@@ -54,9 +58,8 @@ pipeline {
                         }
                     }
 
-                    // Use local Node.js version (assuming it's installed on the slave)
-                    def nodeBin = tool name: 'NodeJS', type: 'hudson.tools.InstallSourceProperty$ToolInstallation'
-                    env.PATH = "${nodeBin}/bin:${env.PATH}"
+                    // Set PATH to include Node.js binaries
+                    env.PATH = "${env.NODEJS_HOME}/bin:${env.PATH}"
 
                     // Install npm dependencies
                     sh 'npm install'
@@ -66,6 +69,5 @@ pipeline {
                 }
             }
         }
-
     }
 }
