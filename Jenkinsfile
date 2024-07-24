@@ -17,7 +17,7 @@ pipeline {
                 // Backend deployment steps
                 dir('backend') {
                     // Activate the virtual environment (assuming it's named 'env')
-                    sh 'source env/bin/activate'
+                    sh '. env/bin/activate'
 
                     // Start the Python backend application
                     sh 'python wsgi.py &'
