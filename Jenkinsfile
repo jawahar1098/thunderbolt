@@ -59,7 +59,7 @@ pipeline {
                         def npmInstalled = sh(script: 'which npm', returnStatus: true)
                         if (npmInstalled != 0) {
                             // Install npm if not found
-                            sh 'sudo apt-get update && sudo apt-get install -y npm'
+                            // sh 'sudo apt-get update && sudo apt-get install -y npm'
                         }
                     }
 
