@@ -38,12 +38,16 @@ pipeline {
             }
         }
 
-        stage('Frontend Deployment on Slave') {
+                stage('Frontend Deployment on Slave') {
             agent {
                 label 'slavenode1' // Replace with your slave node label
             }
+            environment {
+                NODE_VERSION = 'v22.5.1' // Replace with your Node.js version
+                NODE_PATH = "/home/node1/.nvm/versions/node/v22.5.1/bin"
+            }
             steps {
-                // Frontend deployment steps (npm install)
+                // Frontend deployment steps (npm install and run)
                 dir('front_app') {
                     // Reset PATH to include system npm and node
                     script {
@@ -62,10 +66,13 @@ pipeline {
                     // Install npm dependencies
                     sh 'npm install'
 
-                    // Start frontend development server
-                    sh 'npm run dev &'
+                    // Start frontend development server using specified Node.js version
+                    script {
+                        sh "NODE_PATH=${NODE_PATH} NODE_ENV=production npm run dev &"
+                    }
                 }
             }
         }
+
     }
 }
