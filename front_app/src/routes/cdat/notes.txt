@@ -1,0 +1,600 @@
+<script>
+    // @ts-nocheck
+  
+    //highcharts.js
+    //highcharts-3d
+    import { onMount } from "svelte";
+    import { basepath } from "$lib/config";
+    import Chart from "chart.js/auto";
+  
+    import * as d3 from "d3";
+  
+    let dashboard_data = [];
+    let cdr = [];
+    let sdr = [];
+    let suspect = [];
+    let cellid = [];
+    let phonearea = [];
+    let number = "";
+  
+    let last_updated_cdr;
+    let last_updated_sdr;
+    let last_updated_cellid;
+    let last_updated_suspect;
+    let last_updated_phone_area;
+    let cdrData = [];
+  
+    let portfolio;
+    let modes = [
+      "Andhra Pradesh",
+      "Arunachal Pradesh",
+      "Assam",
+      "Bihar",
+      "Chhattisgarh",
+      "Goa",
+      "Gujarat",
+      "Haryana",
+      "Himachal Pradesh",
+      "Jharkhand",
+      "Karnataka",
+      "Kerala",
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Manipur",
+      "Meghalaya",
+      "Mizoram",
+      "Nagaland",
+      "Odisha",
+      "Punjab",
+      "Rajasthan",
+      "Sikkim",
+      "Tamil Nadu",
+      "Telangana",
+      "Tripura",
+      "Uttar Pradesh",
+      "Uttarakhand",
+      "West Bengal",
+      "Andaman and Nicobar Islands",
+      "Chandigarh",
+      "Dadra and Nagar Haveli",
+      "Daman and Diu",
+      "Delhi",
+      "Lakshadweep",
+      "Puducherry",
+    ];
+  
+    let selectOption = "";
+    // total_unique_source_count_cdr
+    // total_unique_source_count_sdr_satewise
+    // last_activation_dates_by_state_cellidchart
+    // last_activation_dates_by_state_phone_area
+  
+    // cdat_cdr
+    // cdat_sdr
+    // cdat_suspect
+    // cdat_cellidchart_sample
+    // cdat_phonearea
+    // cdat_towerdata
+  
+    function dashboard() {
+      fetch(basepath() + "/dashboard_data", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.json();
+        })
+        .then((datas) => {
+          if (datas.status === "success") {
+            console.log(datas);
+  
+            // const chartData = {
+            //     cdr: datas.data.cdat_cdr,
+            //     sdr: datas.data.cdat_sdr,
+            //     suspect: datas.data.cdat_suspect,
+            //     cellid: datas.data.cdat_cellidchart_sample,
+            //     phonearea: datas.data.cdat_phonearea,
+            //     towerdata: datas.data.cdat_towerdata
+            // };
+  
+            // // Call the function to create the 3D pie chart
+            // create3DPieChart(chartData);
+  
+            const dashboardData = datas.data;
+            console.log(dashboardData.last_updated_cellid, "DashBoard");
+            last_updated_cdr = dashboardData.last_updated_cdr.as_on_date;
+            last_updated_sdr = dashboardData.last_updated_sdr;
+            last_updated_cellid = dashboardData.last_updated_cellid.lastupdate;
+            last_updated_suspect =
+              dashboardData.last_updated_suspect.as_on_datetime;
+            last_updated_phone_area = dashboardData.last_updated_phone_area;
+  
+            //   const consolidatedData = consolidateData(dashboardData);
+            //   renderTable(consolidatedData);
+            const chartData = {
+              cdr: datas.data.cdat_cdr,
+              sdr: datas.data.cdat_sdr,
+              suspect: datas.data.cdat_suspect,
+              cellid: datas.data.cdat_cellidchart_sample,
+              phonearea: datas.data.cdat_phonearea,
+              towerdata: datas.data.cdat_towerdata,
+            };
+  
+            // Call the function to create the 3D pie chart
+            create3DPieChart(chartData);
+          } else {
+            console.error("Error in data retrieval:", datas.message);
+          }
+        })
+        .catch((err) => {
+          console.error("Fetch error:", err);
+        });
+    }
+  
+    function dashboardMap(selectOption) {
+      fetch(basepath() + "/tower_dashboard", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(selectOption),
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          return response.json();
+        })
+        .then((datas) => {
+          console.log(datas);
+          cdrData = datas;
+        });
+    }
+  
+    function getRandomColor() {
+      const letters = "0123456789ABCDEF";
+      let color = "#";
+      for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+      }
+      return color;
+    }
+  
+    function drawIndiaMap(selectOption) {
+      console.log(selectOption, "option");
+      const projection = d3.geoMercator().scale(800).center([80, 22]);
+      const svg = d3
+        .select("#india-map")
+        .append("svg")
+        .attr("width", 800)
+        .attr("height", 700);
+  
+      d3.json("states_india.geojson").then(function (india) {
+        const path = d3.geoPath().projection(projection);
+        svg
+          .selectAll("path")
+          .data(india.features)
+          .enter()
+          .append("path")
+          .attr("d", path)
+          .style("fill", (d) =>
+            selectOption === "" ? getColorBasedOnOption(selectOption) : "white"
+          )
+          .attr("stroke", "black");
+        svg
+          .selectAll("text")
+          .data(india.features)
+          .enter()
+          .append("text")
+          .attr("text-anchor", "middle")
+          .style("font-size", "12px")
+          .attr("class", "state-label")
+          .attr("transform", function (d) {
+            const centroid = path.centroid(d);
+            return "translate(" + centroid[0] + "," + centroid[1] + ")";
+          })
+          .attr("dy", ".35em")
+          .text(function (d) {
+            return [d.properties.st_nm, d.properties.state_code];
+          });
+      });
+      function getColorBasedOnOption(selectOption) {
+        return getRandomColor();
+      }
+    }
+  
+    //   function consolidateData(data) {
+    //     let allStates = new Set();
+  
+    //     // Extract all unique states from all data sources
+    //     [
+    //       data.total_unique_source_count_cdr,
+    //       data.total_unique_source_count_sdr_satewise,
+    //       data.last_activation_dates_by_state_cellidchart,
+    //     ].forEach((source) => {
+    //       Object.keys(source).forEach((state) => allStates.add(state));
+    //     });
+  
+    //     let consolidatedData = {};
+  
+    //     // Consolidate data for each state
+    //     allStates.forEach((state) => {
+    //       consolidatedData[state] = {
+    //         cdr: data.total_unique_source_count_cdr[state] || {
+    //           count: "N/A",
+    //           last_update: "N/A",
+    //         },
+    //         sdr: data.total_unique_source_count_sdr_satewise[state] || {
+    //           count: "N/A",
+    //           last_update: "N/A",
+    //         },
+    //         cellid: data.last_activation_dates_by_state_cellidchart[state] || {
+    //           count: "N/A",
+    //           last_update: "N/A",
+    //         },
+    //       };
+    //     });
+  
+    //     return consolidatedData;
+    //   }
+  
+    //   function renderTable(data) {
+    //     const tableBody = document.querySelector(".table-body");
+    //     tableBody.innerHTML = "";
+  
+    //     for (const [state, stateData] of Object.entries(data)) {
+    //       const row = document.createElement("tr");
+  
+    //       // State Cell
+    //       const stateCell = document.createElement("td");
+    //       stateCell.textContent = state;
+    //       row.appendChild(stateCell);
+  
+    //       // CDR Cells
+    //       const cdrCountCell = document.createElement("td");
+    //       cdrCountCell.textContent = stateData.cdr.count;
+    //       row.appendChild(cdrCountCell);
+  
+    //       const cdrLastUpdateCell = document.createElement("td");
+    //       cdrLastUpdateCell.textContent = stateData.cdr.latest_as_on_date;
+    //       row.appendChild(cdrLastUpdateCell);
+  
+    //       // SDR Cells
+    //       const sdrCountCell = document.createElement("td");
+    //       sdrCountCell.textContent = stateData.sdr.source_count;
+    //       row.appendChild(sdrCountCell);
+  
+    //       const sdrLastUpdateCell = document.createElement("td");
+    //       sdrLastUpdateCell.textContent = stateData.sdr.last_updated_date;
+    //       row.appendChild(sdrLastUpdateCell);
+  
+    //       // CellID Cells
+    //       const cellidCountCell = document.createElement("td");
+    //       cellidCountCell.textContent = stateData.cellid.count;
+    //       row.appendChild(cellidCountCell);
+  
+    //       const cellidLastUpdateCell = document.createElement("td");
+    //       cellidLastUpdateCell.textContent = stateData.cellid.last_update;
+    //       row.appendChild(cellidLastUpdateCell);
+  
+    //       tableBody.appendChild(row);
+    //     }
+    //   }
+  
+    //   function create3DPieChart(chartData) {
+    //     Highcharts.chart("my3DPieChart", {
+    //       chart: {
+    //         type: "pie",
+    //         options3d: {
+    //           enabled: true,
+    //           alpha: 45,
+    //         },
+    //       },
+    //       title: {
+    //         text: "3D Pie Chart",
+    //       },
+    //       subtitle: {
+    //         text: "Your Chart Subtitle",
+    //       },
+    //       plotOptions: {
+    //         pie: {
+    //           innerSize: 100,
+    //           depth: 45,
+    //         },
+    //       },
+    //       series: [
+    //         {
+    //           name: "Data Count",
+    //           data: [
+    //             ["CDR", chartData.cdr],
+    //             ["SDR", chartData.sdr],
+    //             ["Suspect", chartData.suspect],
+    //             ["CellID", chartData.cellid],
+    //             ["Phone Area", chartData.phonearea],
+    //             ["Tower Data", chartData.towerdata],
+    //           ],
+    //         },
+    //       ],
+    //     });
+    //   }
+  
+    function create3DPieChart(chartData) {
+      const ctx = document.getElementById("my3DPieChart").getContext("2d");
+  
+      const data = {
+        labels: Object.keys(chartData),
+        datasets: [
+          {
+            label: "Data Counts",
+            data: Object.values(chartData),
+            backgroundColor: [
+              "rgba(255, 99, 132)",
+              "rgba(54, 162, 235)",
+              "rgba(255, 206, 86)",
+              "rgba(75, 192, 192)",
+              "rgba(153, 102, 255)",
+              "rgba(255, 159, 64)",
+            ],
+            borderColor: [
+              "rgba(255, 99, 132)",
+              "rgba(54, 162, 235)",
+              "rgba(255, 206, 86)",
+              "rgba(75, 192, 192)",
+              "rgba(153, 102, 255)",
+              "rgba(255, 159, 64)",
+            ],
+            borderWidth: 1,
+          },
+        ],
+      };
+  
+      new Chart(ctx, {
+        type: "pie",
+        data: data,
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              position: "top",
+            },
+            datalabels: {
+              formatter: (value, context) => {
+                return context.chart.data.labels[context.dataIndex];
+              },
+              color: "white", // You can customize the color of the text
+              anchor: "end", // Position the labels at the end of the arc
+              align: "end", // Align the labels at the end of the arc
+            },
+          },
+          animation: {
+            animateScale: true,
+            animateRotate: true,
+          },
+        },
+      });
+    }
+  
+    function handleOptionChange(event) {
+      selectOption = event.target.value;
+      dashboardMap(selectOption);
+    }
+    onMount(() => {
+      dashboard();
+      drawIndiaMap(selectOption);
+      // handleOptionChange();
+      // <Main />;
+    });
+    // onMount(drawIndiaMap);
+  </script>
+  
+  <!-- <svelte:head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+  </svelte:head> -->
+  <main>
+
+    <div class="conts">
+      <div class="cards">
+        <div class="cards-content l-bg-cherry">
+          <div class="text">
+            <div>Last Updated CDR</div>
+            <div class="text-content">{last_updated_cdr}</div>
+        </div>
+      </div>
+      <div class="cards-content l-bg-green-dark">
+        <div class="text">
+          <div>Last Updated SDR</div>
+          <div class="text-content">{last_updated_sdr}</div>
+        </div>
+      </div>
+      <div class="cards-content l-bg-red-dark">
+        <div class="text">
+          <div>Last Updated CellID</div>
+          <div class="text-content">{last_updated_cellid}</div>
+        </div>
+      </div>
+      <div class="cards-content l-bg-orange-dark">
+        <div class="text">
+          <div>Last Updated Suspect</div>
+          <div class="text-content">{last_updated_suspect}</div>
+        </div>
+      </div>
+      <div class="cards-content l-bg-blue-dark">
+        <div class="text">
+          <div>Last Updated Phone Area</div>
+          <div class="text-content">{last_updated_phone_area}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="map">
+    <div class="map-content">
+      <div class="maps">
+        <select
+        id="color-selector"
+        placeholder="DropDown"
+          bind:value={selectOption}
+          on:change={handleOptionChange}
+          >
+          {#each modes as mode}
+          <option value={mode}>{mode}</option>
+          {/each}
+        </select>
+        <div id="india-map" class="mapee" />
+      </div>
+      <div class="result-content">
+        {#each cdrData as res}
+        <div class="cards-text">
+          <p>Total Phone Area</p>
+          <p>
+            {res["Phone Area"]}
+          </p>
+        </div>
+        <div class="cards-text">
+          <p>Total CDR Data</p>
+          <p>{res["cdrData"]}</p>
+        </div>
+        <div class="cards-text">
+          <p>Total SDR Data</p>
+          <p>{res["SDR Data"]}</p>
+        </div>
+        <div class="cards-text">
+          <p>Total Suspect Data</p>
+          <p>{res["Suspect"]}</p>
+        </div>
+        <div class="cards-text">
+          <p>Total CellID Data</p>
+          <p>{res["cellId Chart"]}</p>
+        </div>
+        {/each}
+        <!-- 
+          <div class="cards-text"></div>
+          <div class="cards-text"></div>
+          <div class="cards-text"></div>
+          <div class="cards-text"></div> -->
+        </div>
+      </div>
+    <div class="card-content">
+      <canvas id="my3DPieChart" class="pie-chart"></canvas>
+    </div>
+  </div>
+</main>
+  
+  <style>
+    main{
+      margin-top: 3%;
+    }
+    .cards-text p {
+      margin: 0.5rem 0rem 0rem 1rem;
+      font-size: 1.2rem;
+      font-family: "Raleway";
+    }
+    .mapee {
+      display: flex;
+      justify-content: center;
+    }
+    .conts {
+      position: absolute;
+      left: 4%;
+      width: calc(100% - 4%);
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0.5rem;
+      justify-content: space-evenly;
+    }
+    .cards-content {
+      width: 18%;
+      height: 12vh;
+      margin: 0.5rem;
+      border-radius: 10px;
+    }
+  
+    .l-bg-cherry {
+      background: linear-gradient(to right, #c899b6, rgb(235, 211, 225));
+    }
+    .l-bg-green-dark {
+      background: linear-gradient(to right, #82ccc5, #92cea9);
+    }
+  
+    .l-bg-orange-dark {
+      background: linear-gradient(to right, #bf8698, #db627c);
+    }
+  
+    .l-bg-red-dark {
+      background: linear-gradient(to right, #ea9e9e, rgb(236, 99, 99));
+    }
+    .l-bg-blue-dark {
+      background: linear-gradient(to right, #9ab0e4, rgb(99, 206, 236));
+    }
+    .map {
+      position: absolute;
+      margin-top: 8%;
+      margin-left: 2%;
+      width:91vw;
+      left: 4%;
+      height: 75vh;
+      display: flex;
+      background-color: azure
+      /* box-shadow:; */
+    }
+    .map-content {
+      width: 77%;
+      height: 100%;
+      display: flex;
+    }
+    .card-content {
+      width: 22%;
+      border-radius: 5px;
+      box-shadow: 0px 0px 1px rgb(175, 175, 175);
+    }
+    .maps {
+      width: 70%;
+      height: 100%;
+    }
+    .result-content {
+      margin-top: 1%;
+      width: 30%;
+      height: 100%;
+    }
+    select {
+      margin-top: 3rem;
+      margin-left: 2rem;
+      width: 20%;
+      font-size: 1rem;
+      font-family: "Raleway";
+    }
+    .text {
+      font-size: 1.2rem;
+      font-family: "Raleway";
+      text-align: center;
+      margin: 0.5rem;
+      font-weight: 500;
+    }
+    .text-content {
+      color: white;
+      font-weight: 600;
+      font-family: "Raleway";
+      font-size: 1.1rem;
+      padding: 0.5rem;
+    }
+    .pie-chart {
+      width: 100% !important;
+    }
+    .cards-text {
+      width: 90%;
+      height: 15%;
+      border: 1.5px solid rgb(175, 175, 175);
+      margin: 0.7rem 0rem 0rem 1rem;
+      box-shadow: 0px 0px 4px rgb(175, 175, 175);
+      border-radius: 10px;
+    }
+  </style>

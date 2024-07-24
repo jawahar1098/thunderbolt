@@ -1,0 +1,9 @@
+Backend Volume Mount 
+1. /mnt/a73d1cac-dc8c-44df-924d-a773ac527d26/Ingestion_files/zipfiles:/app/app/database/zipfiles/ 
+2. /mnt/a73d1cac-dc8c-44df-924d-a773ac527d26/Ingestion_files/parse_files:/app/app/database/parse_files/ 
+3. /mnt/a73d1cac-dc8c-44df-924d-a773ac527d26/Ingestion_files/case_uploads/:/app/case_uploads/ 
+
+Ingestion Volume Mount
+1. /mnt/a73d1cac-dc8c-44df-924d-a773ac527d26/Ingestion_files/:/app/Ingestion_files/
+
+Container name  -- ingestion_test

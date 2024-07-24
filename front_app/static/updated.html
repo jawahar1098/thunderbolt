@@ -1,0 +1,3425 @@
+
+<!-- <link href="css/Roboto-400.css" rel="stylesheet">
+<link href="css/Oswald-400.css" rel="stylesheet">
+<link href="css/Raleway-400.css" rel="stylesheet">
+<link href="css/PlayfairDisplay-400.css" rel="stylesheet">
+<link href="css/Lato-400.css" rel="stylesheet">
+<link href="css/Montserrat-400.css" rel="stylesheet">
+<link href="css/all.min.css" rel="stylesheet">
+<link href="css/daterangepicker.css" rel="stylesheet"> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    
+
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link href="css/jquery.dataTables.min.css" rel="stylesheet">
+
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/daterangepicker.css" rel="stylesheet">
+
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/xlsx.full.min.js"></script>
+    <script src="js/highcharts.js"></script>
+
+
+
+ 
+
+    <script src="js/highcharts.js"></script>
+    <script src="js/exporting.js"></script>
+
+   
+ 
+
+    <link href="css/leaflet.css" rel="stylesheet">
+
+
+
+
+
+    <script src="js/leaflet.js"></script>
+    <script src="js/leaflet.label.js"></script>
+    <script src="js/leaflet.polylineDecorator.js"></script>
+
+
+
+
+    <!-- <script src="js/jquery-3.5.1.js"></script> -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+   
+                    
+<link href="css/Roboto-400.css" rel="stylesheet">
+<link href="css/Oswald-400.css" rel="stylesheet">
+<link href="css/Raleway-400.css" rel="stylesheet">
+<link href="css/PlayfairDisplay-400.css" rel="stylesheet">
+<link href="css/Lato-400.css" rel="stylesheet">
+<link href="css/Montserrat-400.css" rel="stylesheet">
+<link href="css/all.min.css" rel="stylesheet">
+<link href="css/daterangepicker.css" rel="stylesheet">
+
+    <!-- <script src="js/jquery-3.5.1.min.js"></script> -->
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <link href="css/jquery.dataTables.min.css" rel="stylesheet">
+    <script src="js/jquery.dataTables.min.js"></script>
+
+
+<script src="js/dataTables.buttons.min.js"></script>
+<script src="js/jszip.min.js"></script>
+<script src="js/buttons.html5.min.js"></script>
+<script src="js/buttons.print.min.js"></script>
+<script src="js/buttons.flash.min.js"></script>
+<script src="js/pdfmake.min.js"></script>
+<script src="js/vfs_fonts.js"></script>
+
+
+
+<link href="css/buttons.dataTables.min.css" rel="stylesheet">
+
+
+    <script src="js/moment.min.js"></script>
+
+<script src="js/daterangepicker.min.js"></script>
+
+<link href="css/daterangepicker.css" rel="stylesheet">
+
+
+<script src="js/highcharts.js"></script>
+<script src="js/highcharts-3d.js"></script>
+<script src="js/exporting.js"></script>
+
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<script src="js/bootstrap.bundle.min.js"></script>
+
+
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<link href="/fontawesome-free-5.15.4-web/css/all.min.css" rel="stylesheet">
+
+
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+<style>
+    body {
+        
+        font-size: 16px;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        overflow-x: hidden;
+        /* font-size: 22px; */
+    }
+    img {
+        height: 40px;
+        width: 140px;
+        margin-right: 10px;
+    }
+    h1 {
+        color: rgb(2, 2, 62);
+        /* color: white; */
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+    }
+
+    .container_1 {
+        background-color: rgb(2, 2, 62);
+        /* background-color: #8678ec; */
+        padding: 10px;
+       
+    }
+
+    .dropbtn {
+background-color: #3498DB;
+color: white;
+padding: 16px;
+font-size: 16px;
+border: none;
+cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+background-color: #2980B9;
+}
+
+.dropdown {
+position: relative;
+/* display: inline-block; */
+}
+
+.dropdown-content {
+display: inline-block;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+overflow: auto;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+    
+
+    footer {
+        padding: 20px;
+        text-align: center;
+        margin-top: auto;
+    }
+    .button {
+        height: 40px;
+        width: 200px;
+        font-size: 15px;
+        margin-left: 20px;
+    }
+    .button:hover{
+        background-color: black;
+        color: white;
+    }
+    .button-1 {
+        height: 40px;
+        width: 10%;
+        font-size: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 8px;
+    }
+    .button-1:hover{
+        background-color: black;
+        color: white;
+    }
+    
+.para {
+text-align: center;
+font-size: 200px;
+}
+    .container_2 {
+display: flex;
+justify-content: space-around;
+margin-top: 200px;
+}
+
+.card {
+width: 200px;
+padding: 20px;
+height: 150px;
+margin: 10px 0px ;
+border-radius: 20px;
+text-align: left;
+position: relative;
+overflow: hidden; 
+border: 2px solid black;
+box-sizing: border-box;
+display: inline-block;
+}
+.card a {
+    display: block; /* Make the link fill the entire card */
+    height: 100%;
+    text-decoration: none; /* Remove default underline for links */
+    color: inherit; /* Inherit text color from parent */
+}
+.head {
+font-size: 20px;
+}
+p {
+font-size: 15px;
+}
+
+.click-me-btn {
+display: block;
+margin: 10px auto;
+padding: 8px 16px;
+background-color: #3498db; 
+color: #fff;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+}
+.click-me-btn:hover {
+background-color: black;
+}
+.search-container {
+display: flex;
+justify-content: center;
+margin-top: 5px;
+/* padding: 10px; */
+margin-left: 600px;
+}
+.search {
+height: 30px;
+width: 450px;
+border-radius: 10px;
+}
+.search:hover {
+background-color: aliceblue;
+}
+.btn-search {
+/* padding: 8px; */
+height: 35px;
+width: 100px;
+border-radius: 10px;
+}
+.btn-search:hover {
+background-color: aliceblue;
+}
+.link {
+text-decoration: none;
+color: black;
+}
+
+/* need to fix width of table */
+
+#daylocation_wrapper,
+#nightlocation_wrapper{
+
+padding-top: 20px;
+/* max-width: 50%; */
+/* width: 50%; */
+margin-left: 40px;
+/* max-width: 50%; */
+text-wrap: wrap;
+}
+
+    #probVoipCalls_wrapper,
+#vpns_used_wrapper{
+    
+
+    margin-top: 40px;
+    margin-left: 70px;
+
+    width:90%
+}
+
+#voipCallsTable2_wrapper{
+
+padding-top: 20px;
+/* max-width: 100%; */
+width: 100%;
+    
+}
+
+#voipCallsTable2,#matchedCalls,#msisdnsfound{
+
+margin-left: 2px;
+
+}
+
+#matchedCalls_wrapper{
+
+width: 100%;
+}
+
+#msisdnsfound{
+width:500%
+}
+
+
+
+#bparty_numbers_wrapper,
+#imei_table_wrapper,
+#tower_table_wrapper
+{
+padding-top: 100px;
+max-width: 80%;
+max-height: 20%;
+margin-left: 120px;
+
+}
+
+
+/* .nav-tabs,#tabs */
+
+/* #reportrange, */
+    #checkboxes,
+    .container_6,
+    /* #voipCallsTable2_wrapper, */
+    #daylocation_wrapper,
+    #nightlocation_wrapper,
+    #vpns_used_wrapper,
+    #bparty_numbers_wrapper,
+    #imei_table_wrapper,
+    #tower_table_wrapper,
+    #h1_tower,
+    #h1_daylocation,
+    #h1_nightlocation,
+    #h1_vpns_used,
+    #h1_bparty_numbers,
+    #h1_imei_table,#map,
+    .dropbtn,.clear_filters,
+    #probVoipCalls_wrapper
+    {
+        display: none;
+    }
+
+
+    #reportrange{
+  background: #fff; 
+  cursor: pointer; 
+  padding: 5px 10px; 
+  border: 1px solid rgb(107, 106, 106);
+  width: 50%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  }
+
+  #reportrange1{
+  background: #fff; 
+  cursor: pointer; 
+  padding: 5px 10px; 
+  border: 1px solid rgb(107, 106, 106);
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  }
+  /* .dropbtn,.clear_filters {
+display: inline-block;
+} */
+
+
+
+
+
+
+</style>
+
+
+<style>
+body {
+    
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+    /* font-size: 22px; */
+}
+img {
+    height: 40px;
+    width: 140px;
+    margin-right: 10px;
+}
+h1 {
+    color: rgb(34, 21, 68);
+    /* color: white; */
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    /* font-size: 500px; */
+}
+
+header {
+    background-color: #c1d5e1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.container_1 {
+        position: fixed;
+        top: 88px;
+        left: 0;
+        width: 100%;
+        background-color: #f2f2f2; 
+        z-index: 1000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+    }
+
+
+
+.container_1 {
+    background-color: #000;
+    /* background-color: rgb(2, 2, 60) ; */
+    /* background-color: #8678ec; */
+    padding: 10px;
+    display: flex;
+    /* position: relative; */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+width: 250px; /* Set the width equal to the button width */
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+z-index: 1;
+top: 100%; /* Position dropdown below the button */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.logout {
+    margin-left: auto;
+    height: 40px;
+    width: 80px;
+    margin-top: 8px;
+    /* border-radius: 10px; */
+    /* padding: 5px; */
+    /* background-color: #ddd; */
+}
+
+.logout:hover {
+    background-color: #333;
+    color: white;
+    /* transform: scale(1.1); */
+}
+.button {
+    height: 40px;
+    width: 200px;
+    font-size: 15px;
+    margin-left: 20px;
+}
+.button:hover{
+    background-color: black;
+    color: white;
+}
+.button-1 {
+    height: 40px;
+    width: 10%;
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.button-1:hover{
+    background-color: black;
+    color: white;
+}
+
+.head {
+font-size: 20px;
+}
+p {
+font-size: 15px;
+}
+
+.search-container {
+display: flex;
+justify-content: center;
+margin-top: 5px;
+padding: 10px;
+position: absolute;
+}
+.search {
+height: 30px;
+width: 450px;
+border-radius: 10px;
+margin-left: 100px;
+}
+.search:hover {
+background-color: aliceblue;
+}
+.btn-search {
+height: 35px;
+width: 100px;
+border-radius: 10px;
+}
+.btn-search:hover {
+background-color: aliceblue;
+}
+.link {
+text-decoration: none;
+color: black;
+}
+
+
+.card {
+       display: block;
+width: calc(100% - 20px); 
+margin: 0 10px 30px 10px;
+font-size: 16px; 
+       overflow: hidden;
+       margin: 10px;
+       height: 150px;
+       width: 200px;
+background-color: #fff;
+border-radius: 10px;
+border: none;
+position: relative;
+margin-bottom: 30px;
+box-shadow: 0 0.46875rem 2.1875rem rgba(90,97,105,0.1), 0 0.9375rem 1.40625rem rgba(90,97,105,0.1), 0 0.25rem 0.53125rem rgba(90,97,105,0.12), 0 0.125rem 0.1875rem rgba(90,97,105,0.1);
+}
+
+.l-bg-cherry {
+background: linear-gradient(to right, #aa7997, rgb(237, 148, 201)) !important;
+color: #fff;
+
+}
+
+.l-bg-blue-dark:hover, 
+.l-bg-green-dark:hover,
+.l-bg-orange-dark:hover,
+.l-bg-cherry-2:hover,
+.l-bg-blue-dark-2:hover,
+.l-bg-green-dark-2:hover,
+.l-bg-orange-dark-2:hover,
+.l-bg-cherry:hover,
+.l-bg-blue-dark:hover  {
+transition: 0.3s;
+transform: scale(1.09);
+}
+
+
+.l-bg-blue-dark {
+background: linear-gradient(to right, #62697b, #8aaeea) !important;
+color: #fff;
+}
+
+.l-bg-green-dark {
+background: linear-gradient(to right, #5e8985, #6fd797) !important;
+color: #fff;
+}
+
+.l-bg-orange-dark {
+background: linear-gradient(to right, #b8976e, #d7b076) !important;
+color: #fff;
+}
+
+.l-bg-cherry-2 {
+background: linear-gradient(to right, #cc90b5, rgb(219, 129, 129)) !important;
+color: #fff;
+}
+
+.l-bg-blue-dark-2 {
+background: linear-gradient(to right, #848da3, rgb(227, 222, 136)) !important;
+color: #fff;
+}
+
+.l-bg-green-dark-2 {
+background: linear-gradient(to right, #488480, #79cbe0) !important;
+color: #fff;
+}
+.l-bg-orange-dark-2 {
+background: linear-gradient(to right, #9d7e59, #f5b270) !important;
+color: #fff;
+}
+
+
+.card .card-statistic-3 .card-icon-large .fas, .card .card-statistic-3 .card-icon-large .far, .card .card-statistic-3 .card-icon-large .fab, .card .card-statistic-3 .card-icon-large .fal {
+font-size: 110px;
+}
+
+.card .card-statistic-3 .card-icon {
+text-align: center;
+line-height: 50px;
+margin-left: 15px;
+color: #000;
+position: absolute;
+right: -5px;
+top: 20px;
+opacity: 0.1;
+}
+   .l-bg-cyan {
+background: linear-gradient(135deg, #289cf5, #84c0ec) !important;
+color: #fff;
+}
+
+.l-bg-green {
+background: linear-gradient(135deg, #23bdb8 0%, #43e794 100%) !important;
+color: #fff;
+}
+
+.l-bg-orange {
+background: linear-gradient(to right, #f9900e, #ffba56) !important;
+color: #fff;
+}
+
+.l-bg-cyan {
+background: linear-gradient(135deg, #289cf5, #84c0ec) !important;
+color: #fff;
+}
+
+
+.card {
+    display: inline-block; 
+    margin: 12.6px;
+    
+}
+
+h2 {
+margin-top: 20px;
+margin-left: 5px;
+}
+
+.count-1 {
+margin-left: 3px;
+color: #ffffff; /* White color for visibility */
+font-size: 35px;
+margin-top: -10px;
+display: flex;
+justify-content: center;
+font-weight: bold;
+text-shadow: 1px 1px 2px #000000; /* Black shadow for readability */
+font-family: 'Oswald', sans-serif; /* Roboto font for a modern look */
+}
+
+
+.card {
+position: relative;
+overflow: hidden; /* Ensures the hover effect stays within the card boundaries */
+}
+
+.card-hover-1 {
+position: absolute;
+bottom: -50px; /* Initially position the hover section outside the card */
+left: 0;
+right: 0;
+background-color: transparent; /* Semi-transparent background */
+transition: bottom 0.3s, background-color 0.3s; /* Transition for hover effect and background color */
+text-align: center;
+opacity: 0; /* Make the hover section invisible initially */
+transition: opacity 0.3s, bottom 0.3s;
+}
+
+.card:hover .card-hover-1 {
+bottom: 0; /* Move the hover section up when the card is hovered */
+background-color: rgba(254, 252, 252, 0.18); /* Semi-transparent white background on hover */
+opacity: 1; /* Make the hover section visible on hover */
+}
+
+.hover-button {
+margin: 10px 0;
+padding: 10px 20px;
+background-color: #fff;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+/* transition: background-color 0.3s; */
+transition: background-color 0.3s, transform 0.3s;
+opacity: 0; /* Make button invisible initially */
+transform: translateY(20px); 
+}
+.card:hover .hover-button {
+opacity: 1; /* Make button visible on hover */
+transform: translateY(0); /* Slide the button up on hover */
+}
+
+.hover-button:hover {
+background-color: #f2f2f2; /* Slightly change color on button hover */
+}
+
+
+/* #tabs{
+margin-left: -62%;
+} */
+
+</style>
+
+
+
+
+
+</head>
+<body>
+    <header>
+        <!-- <img src="/WhatsApp Image 2023-12-08 at 11.14.41.jpeg" alt="Logo"/> -->
+        <h1>NEXUS</h1>
+    </header>
+
+
+    
+    <div class="container_1">
+        <button class="button-1" >Home</button>
+
+
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn" style="background-color: #f2f2f2; /* Green */
+            border: none;
+            color: rgb(56, 46, 46);
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            margin: 0px 2px;
+            cursor: pointer;
+            height: 40px;
+            border-radius: 4px; margin: 8px 10px 10px 10px;">VoipCalls</button>
+    <div id="myDropdown" class="dropdown-content">
+                <label style="margin-left: 10px;"><input type="checkbox" class="call-option-checkbox" value="WhatsApp"> WhatsApp</label>
+                <br>
+                <label style="margin-left: 10px;"><input type="checkbox" class="call-option-checkbox" value="Telegram"> Telegram</label>
+                <br>
+                <label style="margin-left: 10px;"><input type="checkbox" class="call-option-checkbox" value="Signal"> Signal</label>
+                <br>
+                <label style="margin-left: 10px;"><input type="checkbox" class="call-option-checkbox" value="FaceTime"> FaceTime</label>
+
+            </div>
+        </div>
+        
+        <button style="background-color: #f2f2f2; /* Green */
+        border: none;
+        color: rgb(56, 46, 46);
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        position: absolute;
+        cursor: pointer;
+        height: 40px;
+        border-radius: 4px;  margin: 8px 10px 10px 10px;" class = "clear_filters" id="clearFiltersButton">Clear Filters</button>
+
+
+          <div class="search-container">
+            <input id="search-bar" type="text" placeholder="Search.." name="search" class="search" onclick="clearInput(this)">
+
+            <button id="search-button" onclick="performSearch()" type="submit" class="btn-search"><i class="fa fa-search"></i> Search</button>
+        </div>
+
+
+      
+        <!-- <button class="logout" onclick="window.location.href='/logout'"> LOGOUT </button> -->
+    </div>
+   
+    
+ 
+  
+    <div class="container_2">
+
+
+
+        <a class="voipcalls_card" href="#" style="cursor: pointer;">
+            <div class="card l-bg-cherry">
+                <h2 style="font-size: 28px; text-align: center;">Voipcalls</h2>
+                <p class="count-1" id="voipcall-count"></p>
+                <div class="card-statistic-3 p-4">
+                    <div class="card-icon card-icon-large"><i class="fas fa-phone-square"></i></div>
+                </div>
+              
+            </div>
+        </a>
+
+        
+     
+    <!-- <a class = "tower_card" href="#" style="cursor: pointer;">
+        <div class="card l-bg-blue-dark">
+            <h2>Tower Data</h2>
+            <p class="count" id="tower"></p>
+            <div class="card-statistic-3 p-4">
+                <div class="card-icon card-icon-large"><i class="fas fa-users"></i></div>
+            </div>
+        </div>
+    </a> -->
+
+    <a class="daylocation_card" href="#" style="cursor: pointer;">
+        <div class="card l-bg-green-dark">
+            <h2 style="font-size: 25px;">Day-Location</h2>
+            <p class="count-1" id="daycount"></p>
+            <div class="card-statistic-3 p-4">
+                <div class="card-icon card-icon-large"><i class="fas fa-sun"></i></div>
+            </div>
+        </div>
+    </a>
+
+    <a class="nightlocation_card" href="#" style="cursor: pointer;">
+        <div class="card l-bg-orange-dark">
+            <h2 style="font-size: 22px;">Night-Location</h2>
+            <p class="count-1" id="nightcount"></p>
+            <div class="card-statistic-3 p-4">
+                <div class="card-icon card-icon-large"><i class="fas fa-moon"></i></div>
+            </div>
+        </div>
+    </a>
+
+    <a class="vpnused_card" href="#" style="cursor: pointer;">
+        <div class="card l-bg-cherry-2">
+            <h2 style="font-size: 25px; text-align: center;">VPN Used</h2>
+            <p class="count-1" id="vpn_count"></p>
+            <div class="card-statistic-3 p-4">
+                <div class="card-icon card-icon-large"><i class="fas fa-low-vision"></i></div>
+            </div>
+        </div>
+    </a>
+
+
+    <a class="bparty_card" href="#" style="cursor: pointer;">
+        <div class="card l-bg-green-dark-2">
+            <h2 style="font-size: 25px; margin-top: 5px; text-align: center;">B-Party Number</h2>
+            <p class="count-1" id="bparty_count"></p>
+            <div class="card-statistic-3 p-4">
+                <div class="card-icon card-icon-large"><i class="fas fa-phone"></i></div>
+            </div>
+        </div>
+    </a>
+
+    <!-- <a class = "map_card" href="#" style="cursor: pointer;">
+        <div class="card l-bg-orange-dark-2">
+            <h2>Map</h2>
+            <p class="count" id="map-count"></p>
+            <div class="card-statistic-3 p-4">
+                <div class="card-icon card-icon-large"><i class="fas fa-street-view"></i></div>
+            </div>
+        </div>
+    </a> -->
+
+    </div>
+
+
+    <!-- <div id="chartcontainer" style="height: 400px; margin-top: 100px; margin-right: 500px;"></div> -->
+    <script src="js/highcharts.js"></script>
+
+
+    
+    <div style="margin-top: 70px;" class="matched_container">
+        <div id="matched_dbstats" style="width: 52%; margin-left: 20px"></div>
+        <div id="chartcontainer" style="height: 400px;width: 48%; margin-top: 20px; margin-left: 100px;"></div>
+    </div>
+
+    <div class="dbcontainer">
+        <div id="db_stats" style="width: 50%; margin-left: 20px"></div>
+        <div id="dbchart" style="height: 710px; width: 50%; margin-top: 80px;"></div>
+    </div>
+    
+    <style>
+   .dbcontainer,.matched_container {
+    width: 1800px; 
+    max-width: 100%; 
+    display: flex;
+    flex-direction: row; /* Align children in a row */
+    justify-content: space-between; /* Space out children */
+    align-items: start; /* Align children at the start of the cross axis */
+}
+
+
+#db_stats{
+    margin-top: 100px; 
+}
+
+#dbchart {
+    margin-top: 100px;
+}
+
+.custom-table {
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    overflow-y: auto;
+}
+
+.custom-table th, .custom-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.custom-table th {
+    background-color: #f2f2f2;
+}
+
+
+.custom-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+
+
+.col-field-value { width: 20%; }
+/* .col-filename { width: 20%; } */
+.col-voip-count { width: 20%; }
+.col-total-count { width: 20%; }
+.col-datetime { width: 20%; }
+
+
+
+.col-filename {
+    width: 20%; 
+    white-space: pre-wrap; /* Allows text to wrap and respects whitespace */
+    word-wrap: break-word; /* Breaks long words if necessary */
+}
+
+.custom-table th, .custom-table td {
+    padding: 8px;
+    text-align: left;
+    overflow: pre-wrap;
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+    
+}
+.scrollable-body {
+    max-height: 580px; 
+    overflow-y: auto;
+}
+
+
+</style>
+    <script>
+  $(document).ready(function() {
+    $.ajax({
+        url: `http://${window.location.hostname}:5005/dbstats`,
+        type: 'POST',
+        dataType: 'json',
+        success: function(response) {
+            var chartData = [];
+            var headerHtml = '<table class="custom-table"><thead><tr>' +
+                             '<th>Field Value</th><th>Filename</th><th>Voip Count</th>' +
+                             '<th>Total Count</th><th>Date & time</th>' +
+                             '</tr></thead></table>';
+
+            var bodyRows = '';
+
+            if (response.grouped_data && response.grouped_data.length > 0) {
+                response.grouped_data.forEach(function(group) {
+                    var totalCount = 0;
+                    group.documents.forEach(function(document) {
+                        totalCount += parseInt(document.voip_count);
+                    });
+
+                    chartData.push({
+                        name: group.field_value,
+                        y: totalCount
+                    });
+
+                    group.documents.forEach(function(document, index) {
+                        bodyRows += '<tr>' +
+                                    (index === 0 ? '<td rowspan="' + group.documents.length + '">' + group.field_value + '</td>' : '') +
+                                    '<td>' + document.filename + '</td>' +
+                                    '<td>' + document.voip_count + '</td>' +
+                                    (index === 0 ? '<td rowspan="' + group.documents.length + '">' + totalCount + '</td>' : '') +
+                                    '<td>' + formatDate(document.datetime) + '</td>' +
+                                    '</tr>';
+                    });
+                });
+            } else {
+                // Handle empty data
+                bodyRows = '<tr><td ml-40px colspan="5" style="text-align: center;">No data received today</td></tr>';
+            }
+
+            var bodyHtml = '<div class="scrollable-body"><table class="custom-table"><tbody>' + bodyRows + '</tbody></table></div>';
+
+            $('#db_stats').html(headerHtml + bodyHtml);  
+            dbStatsChart(chartData);        
+        },
+        error: function(error) {
+            console.error('Error fetching data:', error);
+        }
+    });
+    
+    function dbStatsChart(data) {
+        Highcharts.chart('dbchart', {
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Today Voip Calls'
+            },
+            xAxis: {
+                type: 'category',
+                title: {
+                    text: 'Field Value'
+                }
+            },
+            yAxis: {
+                title: {
+                    text: 'Total Count'
+                }
+            },
+            series: [{
+                name: 'Total Count',
+                data: data
+            }]
+        });
+    }
+
+
+    $.ajax({
+    url: `http://${window.location.hostname}:5005/matched_dbstats`,
+    type: 'GET',
+    dataType: 'json',
+    success: function(response) {
+        var headerHtml = '<table class="custom-table"><thead><tr>' +
+                         '<th>Number</th><th>Bparty Matched Number</th>' +
+                         '<th>Filename</th><th>Date & time</th><th>Source IP</th>' +
+                         '</tr></thead></table>';
+
+        var bodyRows = '';
+
+        if (response.data && response.data.length > 0) {
+            response.data.forEach(function(group) {
+                var groupRowSpan = group.documents.length;
+
+                group.documents.forEach(function(document, index) {
+                    // Convert each datetime in the Datetime array to IST and format it
+                    var formattedDatetimes = document.Datetime.map(convertUTCDateToIST).join(', ');
+
+                    bodyRows += '<tr>' +
+                                (index === 0 ? '<td rowspan="' + groupRowSpan + '">' + group._id + '</td>' : '') +
+                                '<td>' + document.Caller1 + '</td>' +
+                                '<td>' + document.Filename.join(', ') + '</td>' +
+                                '<td>' + formattedDatetimes + '</td>' +
+                                '<td>' + document.source_ip + '</td>' +
+                                '</tr>';
+                });
+            });
+        } else {
+            // Handle empty data
+            bodyRows = '<tr><td colspan="5" style="text-align: center;" >No data received today</td></tr>';
+        }
+
+        var bodyHtml = '<div class="scrollable-body"><table class="custom-table"><tbody>' + bodyRows + '</tbody></table></div>';
+
+        $('#matched_dbstats').html(headerHtml + bodyHtml);
+    },
+    error: function(error) {
+        console.error('Error fetching data:', error);
+    }
+});
+
+
+        
+    });
+
+        </script>
+
+    <style>
+        .names-1 {
+            margin-top: 180px;
+            font-weight: bold;
+            margin-left: 15px;
+        }
+        .names {
+            font-weight: bold;
+            margin-left: 15px;
+        }
+        
+        /* .profile-card {
+            display: inline-block;
+            height: 50px;
+            width: 300px;
+            border-radius: 20px;
+            box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+            margin-top: 40px; */
+            /* background-color: #d6dfe5; */
+            /* background: linear-gradient(45deg, white, yellow); */
+            /* overflow: hidden; */
+            /* margin-left: 15px;
+        } */
+    
+        .container_4 {
+            display: flex; /* Set display to flex */
+            margin-left: 1%;
+            margin-top: 100px;
+        }
+    
+        .sub-field {
+            margin-right: 20px; /* Optional: Add margin to create space between the two sections */
+        }
+    
+        .buttons-call {
+            display: flex; /* Optional: Set display to flex to make buttons align vertically within their container */
+        }
+    
+        .call-1 {
+            margin-top: 15px;
+            height: 40px;
+            /* transform: skew(20deg);   */
+            width: 150px; 
+            margin-left: 498px;
+            font-weight: bold;
+        }
+        .call-1:hover {
+            background: linear-gradient(45deg, rgb(219, 217, 217) , rgb(238, 181, 181));
+            
+        }
+        .call {
+            margin-top: 15px;
+            height: 40px;
+            /* transform: skew(20deg);   */
+            width: 150px; 
+            font-weight: bold;        
+        }
+        .call:hover {
+            background: linear-gradient(45deg, rgb(236, 233, 233) , rgb(238, 181, 181));
+            
+        }
+
+       
+
+        .container_5 {
+    display: flex;
+    /* box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px; */
+    /* background: linear-gradient(45deg, rgb(223, 225, 225), rgb(216, 216, 196)); */
+    margin-top: 65px;
+    margin-left: -65.5%;
+    width: 90%; 
+    height: 680px;
+    border: 2px solid;
+    overflow-y: auto;
+}
+
+.container_6 {
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    width: 98%;
+    margin-left: 20px;
+    margin-top: -50px;
+    text-align: left;
+    background-color: rgb(247, 240, 240);
+    overflow: hidden; /* Clear float to prevent container collapse */
+    height: 50px;
+    align-items: center;
+}
+
+.container_6 h5,
+.container_6 p {
+    display: inline-block;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.container_6 h5 {
+    width: 120px; /* Adjust the width as needed */
+}
+
+.container_6 p {
+    width: 140px; /* Adjust the width as needed */
+}
+
+/* Optional: Add some margin for spacing */
+.container_6 h5:not(:last-child) {
+    margin-right: 10px;
+}
+
+.container_6 p:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+
+
+
+    .active-button {
+        background: linear-gradient(45deg, rgb(219, 217, 217), rgb(152, 236, 187));
+        /* background: linear-gradient(45deg, rgb(205, 202, 202) , rgb(139, 184, 133)); */
+        color: rgb(86, 85, 85);
+    }
+
+    </style>
+
+
+<!-- new implimented -->
+<!-- <div style="margin-top: 100px;" class="container_6">
+    <h5>Nickname:</h5>
+    <p id="nickname"> </p>
+
+    <h5>Voipcalls:</h5>
+    <p id="voipcount_card"></p>
+
+    <h5>IMEI:</h5>
+    <p id="imei"> </p>
+
+    <h5>App Used:</h5>
+    <p id="app_used"> </p>
+
+    <h5>VPN Used:</h5>
+    <p id="vpn_used"> </p>
+
+    <h5>URL Used:</h5>
+    <p id="url_used"> </p>
+</div> -->
+
+
+
+
+<div class="main_card" style="overflow-y: auto;"> 
+
+    <div class="container_4" >
+        <!-- <div class="sub-field"> -->
+            <!-- <div class="profile-card"> -->
+                <!-- <h5 style="margin-left: 20px;">Nickname : <p style="display: inline-block; margin-top: 50px;"> </p></h5>
+                <br>
+                <h5 style="margin: 10px 0px 0px 20px">Voipcalls : <p id = "voipcount_card" style="display: inline-block; font-size: 20px;"> </p></h5>
+                
+
+                <h5 style="margin: 10px 0px 0px 20px">IMEI : <p style="display: inline-block;"> </p></h5>
+                <br>
+
+                <h5 style="margin: 10px 0px 0px 20px">Apps Used : <p style="display: inline-block;">  </p></h5>
+                <br>
+
+                <h5 style="margin: 10px 0px 0px 20px">VPN Used : <p style="display: inline-block;"> </p></h5>
+                <br>
+
+                <h5 style="margin: 10px 0px 0px 20px">URL Used : <p style="display: inline-block;"> </p></h5> -->
+            <!-- </div> -->
+            <!-- <style>
+                .profile-card {
+                    background-color: #f9f9f9; /* Light grey background */
+                    border: 1px solid #ddd; /* Light grey border */
+                    border-radius: 10px; /* Rounded corners */
+                    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+                    padding: 20px; /* Spacing inside the card */
+                    max-width: 400px; /* Maximum width of the card */
+                    margin: auto; /* Center the card */
+                }
+            
+                .profile-card h4 {
+                    color: #333; /* Dark grey color for the text */
+                    font-size: 16px; /* Slightly larger font size */
+                    margin-bottom: 10px; /* Space between each item */
+                }
+            
+                .profile-card p {
+                    display: inline-block;
+                    margin-left: 10px; /* Space between label and value */
+                    color: #555; /* Slightly lighter color for the value */
+                    font-style: italic; /* Italic style for the value */
+                }
+            
+                /* Adjusting the first item's margin */
+                .profile-card h4:first-child p {
+                    margin-top: 0;
+                }
+            </style>
+            
+            <div class="profile-card" style="margin-top: 70px;">
+                <h4>Nickname: <p style="display: inline-block;">John Doe</p></h4>
+                <h4>Voipcalls: <p id="voipcount_card" style="display: inline-block;">123</p></h4>
+                <h4>IMEI: <p style="display: inline-block;">456789012345678</p></h4>
+                <h4>Apps Used: <p style="display: inline-block;">4</p></h4>
+                <h4>VPN Used: <p style="display: inline-block;">Yes</p></h4>
+                <h4>URL Used: <p style="display: inline-block;">example.com</p></h4>
+            </div> -->
+            
+        <!-- </div> -->
+
+        
+    
+        <div class="buttons-call">
+            <button id = "voipcallsbutton" class="call-1">Voipcalls</button>
+            <!-- <button class="call">IMEI</button> -->
+            <button id = "prob_voipcallsbutton" class="call">Prob_Voipcalls</button>
+            <button id="showDayTableButton" class="call">Day Location</button>
+            <button id = "nightlocatiobbutton" class="call">Night Location</button>
+            <button id = "vpnsusedbutton" class="call">VPN Used</button>
+            <!-- <button id="showBpartyTableButton" class="call">B-Party Number</button> -->
+            <!-- <button id = "mapbutton" class="call">Map</button> -->
+        </div>
+
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var buttons = document.querySelectorAll('.buttons-call .call, .buttons-call .call-1');
+                var initialButton = document.getElementById('voipcallsbutton');
+        
+                // Set initial active button
+                initialButton.classList.add('active-button');
+        
+                function makeActive(event) {
+                    // Remove active class from all buttons
+                    buttons.forEach(function(button) {
+                        button.classList.remove('active-button');
+                    });
+        
+                    // Add active class to clicked button
+                    event.currentTarget.classList.add('active-button');
+                }
+        
+                // Attach event listeners
+                buttons.forEach(function(button) {
+                    button.addEventListener('click', makeActive);
+                });
+            });
+        </script>
+        
+        
+<!-- 
+        <div id="container" style="height: 700px; "></div>
+        <div id="nightChartContainer" style="height: 400px; margin-top: 150px;"></div>
+     -->
+
+ <div class="container_5">
+
+
+    <div id = "tabs" class="container mt-5">
+
+
+
+        <!-- <h1 style="text-align: center;
+        color: #333;
+        margin-left: 300px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        text-decoration: underline;"> </h1>
+    
+         -->
+    
+        
+        <ul class="nav nav-pills" id="myTabs">
+            <li class="nav-item">
+              <a class="nav-link active" id="tab1" data-toggle="tab" href="#content1">VoIP Calls</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="tab2" data-toggle="tab" href="#content2">Matched Calls</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="tab3" data-toggle="tab" href="#content3">MSISDNs Found</a>
+            </li>
+    
+         
+            
+                    <button style="margin-left: 76rem;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exportModal">
+                        Export
+                      </button>
+    
+          </ul>
+      
+          <div class="tab-content mt-2" style="margin-left: -80px;">
+            <div id="reportrange" style="width: 490px;">
+              <div>
+                <i class="fa fa-calendar"></i>&nbsp;
+                <span></span> <i class="fa fa-caret-down"></i>
+               
+                <button  class="btn btn-primary" style="margin-left: 30px;" id="clearDateRange">Clear Date Range</button>
+                
+              </div>
+            </div>
+
+    
+    
+    
+          <div class="tab-pane fade show active" id="content1">
+    
+
+    
+          
+    
+    <table id="voipCallsTable2" class="display" style="width: 100%;">
+    
+        <thead>
+          <tr>
+              <th>MSISDN</th>
+              <th>PUBLIC IP</th>
+              <th>PUBLIC PORT</th>
+              <th>Destination IP</th>
+              <th >Destination Port</th>
+              <th>Start Date and Time</th>
+              <th>End Date and Time</th>
+              <th>Application</th>
+              <th>CellID</th>
+              <th>IPInfo</th>
+              <th>Matched Number</th>
+              
+              
+          </tr>
+      </thead>
+    </table>
+    
+    
+    
+    
+          </div>
+      
+          <div class="tab-pane fade" id="content2">
+    
+         
+            
+      <table id="matchedCalls" class="display" style="width: 100%;">
+      
+          <thead>
+            <tr>
+                <th>Caller 1</th>
+                <th>Caller 2</th>
+                <th>Call At</th>
+                <th>Source IP</th>
+                <th>Destination On</th>
+                <th>Caller1 Name</th>
+                <th>Caller2 Name</th>
+                <th>Remarks</th>
+               
+                
+                
+            </tr>
+        </thead>
+      </table> 
+          </div>
+      
+          <div class="tab-pane fade" id="content3">
+            <table id="msisdnsfound" class="display" style="width: 100%;">
+      
+                <thead>
+                  <tr>
+                      <th>MSISDN</th>
+                      <th>Name</th>
+                      <th>Notes</th>
+                      
+                      
+                  </tr>
+              </thead>
+            </table> 
+          </div>
+        </div>
+      </div>
+
+
+        </table><table id="daylocation" class="display" style="width: 100%;">
+            <h1 id="h1_daylocation"></h1>
+            <thead>
+                <tr>
+                    <th style="width: 5px;">nickname</th>
+                    <th style="width: 10px;">user_address</th>
+                    <th style="width: 50px;">source_number</th>
+                    <th style="width: 50px;">tower_id</th>
+                    <th style="width: 30px;">total_calls</th>     
+                </tr>
+            </thead>
+        </table>
+        
+
+
+
+   
+    <style>
+        #nightlocation_wrapper, #daylocation_wrapper,#probVoipCalls_wrapper {
+            height: 680px; 
+            overflow-y: auto;
+            width: 90%;
+            margin-left: 75px;
+        }
+    </style> 
+
+
+    <table id="nightlocation" class="display" style="width: 100%;">
+    
+    <h1  id="h1_nightlocation"  style="
+    color: #333;
+    margin-left: 700px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-decoration: underline;"> </h1>
+    
+        <thead>
+          <tr>
+            <th>nickname</th>
+            <th >user_address</th>
+            <th>source_number</th>
+            <th>tower_id</th>
+            <th>total_calls</th>     
+          </tr>
+      </thead>
+    </table>
+    
+    
+    
+    
+    <table id="vpns_used" class="display" style="width:100%;">
+    
+    <h1  id="h1_vpns_used"  style="
+    color: #333;
+    margin-left: 760px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-decoration: underline;"> </h1>
+    
+    
+        <thead>
+          <tr>
+            <th style="width: 30%;">VPN</th>
+            <th style="width: 30%;">Start Time</th>
+            <th style="width: 30%;">End Time</th>   
+          </tr>
+      </thead>
+    </table>
+    
+    
+    <table id="bparty_numbers" class="display" style="width:100%;">
+    
+    <h1  id="h1_bparty_numbers"  style="
+    color: #333;
+    margin-left: 700px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-decoration: underline;"> </h1>
+        <thead>
+          <tr>
+            <th style="width: 20%;">Caller1 </th>
+            <th style="width: 20%;">Caller2</th>
+          </tr>
+      </thead>
+    </table>
+    
+
+<table id="probVoipCalls" class="display" style="width: 100%; margin-top: 20px;">
+
+    <thead>
+        <tr>
+         
+            
+            <th>MSISDN</th>
+            <th>PUBLIC IP</th>
+            <th>PUBLIC PORT</th>
+            <th>Destination IP</th>
+            <th >Destination Port</th>
+            <th>Start Date and Time</th>
+            <th>End Date and Time</th>
+            <!-- <th>Application</th> -->
+            <th>CellID</th>
+            <th>IPInfo</th>
+            <!-- <th>Matched Number</th> -->
+            
+        </tr>
+    </thead>
+</table>
+
+<!-- 
+    <div id="map" style="height: 669px; margin-top: 2px; width: 111rem;"></div>
+    
+
+
+
+    <script>
+        var map = L.map('map').setView([20.5937, 78.9629], 5);
+
+        L.tileLayer(`http://0.0.0.0:8082/tile/{z}/{x}/{y}.png`, {
+            attribution: 'Your attribution here'
+        }).addTo(map);
+
+        fetch(`http://${window.location.hostname}:5005/map_data`)
+            .then(response => response.json())
+            .then(data => {
+                // Add markers for each location with constant time display
+                data.locations.forEach(point => {
+                    // Create a DivIcon with the time and a white box shape
+                    var timeIcon = L.divIcon({
+                        className: 'time-label',
+                        html: '<div class="time-box">' + 'Time: ' + point.time + '</div>',
+                        iconSize: [150, 30], // Adjust the size as needed
+                        iconAnchor: [75, 15] // Adjust the anchor as needed
+                    });
+
+                    // Create a marker with the DivIcon
+                    var marker = L.marker([point.latitude, point.longitude], { icon: timeIcon }).addTo(map);
+                });
+
+                // Create arrays to store polylines and labels
+                var polylines = [];
+                var labels = [];
+
+                // Add connecting lines with arrowheads and labels
+                data.connecting_lines.forEach((line, index) => {
+                    var polyline = L.polyline([line.start, line.end], { color: 'blue' }).addTo(map);
+                    polylines.push(polyline);
+
+                    // Create a label with sequential number at the midpoint
+                    var midPoint = L.latLngBounds(line.start, line.end).getCenter();
+                    var label = L.marker(midPoint, {
+                        icon: L.divIcon({
+                            className: 'label',
+                            html: index + 1,
+                            iconSize: [20, 20]
+                        })
+                    }).addTo(map);
+
+                    labels.push(label);
+                });
+
+                // Add arrowheads to the connecting lines
+                polylines.forEach(polyline => {
+                    var arrowHead = L.polylineDecorator(polyline, {
+                        patterns: [
+                            { offset: '50%', repeat: 0, symbol: L.Symbol.arrowHead({ pixelSize: 15, pathOptions: { color: 'blue' } }) }
+                        ]
+                    }).addTo(map);
+                });
+
+                // Add label at the start of the first connecting line (color: green)
+                var firstLabel = L.marker(data.connecting_lines[0].start, {
+                    icon: L.divIcon({
+                        className: 'label',
+                        html: 'Start',
+                        iconSize: [20, 20],
+                        iconAnchor: [10, 10],  // Center the icon on the marker
+                        className: 'start-label'
+                    })
+                }).addTo(map);
+
+                // Add label at the end of the last connecting line (color: red)
+                var lastIndex = data.connecting_lines.length - 1;
+                var lastLabel = L.marker(data.connecting_lines[lastIndex].end, {
+                    icon: L.divIcon({
+                        className: 'label',
+                        html: 'End',
+                        iconSize: [20, 20],
+                        iconAnchor: [10, 10],  // Center the icon on the marker
+                        className: 'end-label'
+                    })
+                }).addTo(map);
+            });
+    </script>
+    <style>
+        .label {
+            font-size: 20px;
+            font-weight: bold;
+            color: red;  /* Default color for labels */
+        }
+
+        .start-label {
+            font-size: 20px;
+            font-weight: bold;
+            color: green;
+        }
+
+        .end-label {
+            font-size: 20px;
+            font-weight: bold;
+            color: red;
+        }
+
+        .time-label {
+            font-size: 14px;
+            font-weight: bold;
+            color: black;
+        }
+
+        .time-box {
+            background-color: white;
+            padding: 5px; /* Adjust the padding as needed */
+            border: 1px solid black; /* Add a border as needed */
+            border-radius: 5px; /* Add border-radius for rounded corners as needed */
+        }
+    </style>
+            -->
+
+        </div>
+
+    </div>
+
+
+
+<br>
+
+    
+<!-- <div id="reportrange">
+    <i class="fa fa-calendar"></i>&nbsp;
+    <span></span> <i class="fa fa-caret-down"></i>
+    <button class="btn btn-primary" style="margin-left: 30px;" id="clearDateRange">Clear Date Range</button>
+</div> -->
+
+
+
+<div id="container" style="height: 400px"></div>
+<div id="nightChartContainer" style="height: 400px"></div>
+
+<div id="dayNightChartContainer" style="height: 400px"></div>
+
+
+<div class="modal fade" id="exportModal" tabindex="-1" role="dialog" aria-labelledby="exportModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exportModalLabel">Select Range to Export</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="exportAllCheckbox">
+            <label class="form-check-label" for="exportAllCheckbox">
+              Export All
+            </label>
+          </div>
+
+            <div id="reportrange1">
+              <div>
+                <i class="fa fa-calendar"></i>&nbsp;
+                <span></span> <i class="fa fa-caret-down"></i>
+               
+                
+            </div>
+        </div>
+        <button  class="btn btn-primary" style="margin-left: 315px;" id="clearDateRange1">Clear Date Range</button>
+    
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button onclick="exportToExcel()" type="button" class="btn btn-primary" id="exportButton">Export</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></scrip> -->
+
+    <script src="js/moment.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/daterangepicker.min.js"></script>
+
+
+
+
+<script type="text/javascript">
+$(function() {
+        var start = moment().subtract(5, 'years');
+        var end = moment().add(5,"years");
+  // created inital 10 years , if need to change default value , we need to change in backend , /voipcaltable
+        function cb(start, end) {
+          $('#reportrange1 span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        }
+  
+        $('#reportrange1').daterangepicker({
+          startDate: start,
+          endDate: end,
+          ranges: {
+            'Today': [moment(), moment()],
+            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+            'This Month': [moment().startOf('month'), moment().endOf('month')],
+            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+          }
+        }, cb);
+  
+        cb(start, end);
+  
+        $('#reportrange1').on('apply.daterangepicker', function(ev, picker) {
+          var startDate = picker.startDate;
+          var endDate = picker.endDate;
+  
+  
+            // populateDataTable()
+            // voipMatchedTable()
+  
+          console.log(startDate,endDate,"./././././././././.")
+        });
+
+
+
+        $('#clearDateRange1').click(function() {
+        $('#reportrange1').data('daterangepicker').setStartDate(start);
+        $('#reportrange1').data('daterangepicker').setEndDate(end);
+        cb(start, end); // Update the display
+
+        // populateDataTable()
+        // voipMatchedTable()
+
+    });
+
+
+      });
+
+
+        $(function() {
+            var start = moment().subtract(5, 'years');
+            var end = moment().add(5, 'years');
+
+            function cb(start, end) {
+                $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+            }
+
+            $('#reportrange').daterangepicker({
+                startDate: start,
+                endDate: end,
+                ranges: {
+                   'Today': [moment(), moment()],
+                   'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                   'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                   'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                   'This Month': [moment().startOf('month'), moment().endOf('month')],
+                   'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                }
+            }, cb);
+
+            cb(start, end);
+
+            $('#reportrange').on('apply.daterangepicker', function(ev, picker) {
+                var startDate = picker.startDate;
+                var endDate = picker.endDate;
+
+                // Add your logic for date range changes here
+                console.log(startDate, endDate, "./././././././././.");
+            });
+
+            $('#clearDateRange').click(function() {
+                $('#reportrange').data('daterangepicker').setStartDate(start);
+                $('#reportrange').data('daterangepicker').setEndDate(end);
+                cb(start, end); // Update the display
+
+                // Add your logic for clearing date range here
+            });
+        });
+
+
+
+
+        function exportToExcel() {
+    const isExportAllChecked = document.getElementById('exportAllCheckbox').checked;
+    const searchValue = document.getElementById('search-bar').value.trim();
+
+    let startDate = '';
+    let endDate = '';
+
+    if (!isExportAllChecked) {
+        const reportRangeSpan = document.getElementById('reportrange1').querySelector('span');
+        [startDate, endDate] = reportRangeSpan.textContent.split(' - ');
+    }
+
+    $.ajax({
+        url: `http://${window.location.hostname}:5005/exporttoexcel`,
+        type: 'POST',
+        data: {
+            start_date: startDate,
+            end_date: endDate,
+            export_all: isExportAllChecked,
+            searchValue: searchValue,
+        },
+        success: function (response) {
+            // Display a success message
+            if (response && response.message) {
+                alert(response.message);  // Or display the message in a more user-friendly way
+            } else {
+                alert("File has been downloaded successfully");
+            }
+        },
+        error: function (error) {
+            console.error('Error exporting data:', error);
+            alert("Failed to download the file.");
+        }
+    });
+}
+
+
+
+    </script>
+
+<script>
+
+function clearInput(inputField) {
+    inputField.value = '';
+}
+    
+    async function performSearch() {
+      
+    probVoipCalls()
+    populateDataTable()
+    daylocationTable()
+    nightlocationTable()
+    vpnUsedTable();
+    voipMatchedTable();
+    voipMsisdnfoundTable();
+    bpartyTable();
+    imeiTable();
+    towerTable();
+    displayCount();
+
+    var searchBar = document.getElementById('search-bar');
+    var container2 = document.querySelector('.container_2');
+    var container4 = document.querySelector('.container_4');
+    var chartcontainer = document.getElementById('chartcontainer');
+    var container = document.getElementById('container');
+    var nightChartContainer = document.getElementById('nightChartContainer');
+    var container_6 = document.querySelector('.container_6')
+    var dbcontainer = document.querySelector(".dbcontainer")
+    var daynightChart = document.getElementById('dayNightChartContainer')
+    var voipcalls = document.querySelector('.dropbtn')
+    var clear_filters = document.querySelector('.clear_filters')
+
+
+    if (searchBar.value.trim() !== '') {
+        container2.style.display = 'none'; 
+        container4.style.display = 'flex';
+        chartcontainer.style.display = 'none'; // Hide chartcontainer
+        container.style.display = 'none'; // Hide container
+        nightChartContainer.style.display = 'none'; 
+        dbcontainer.style.display = 'none';
+        matched_dbstats.style.display = 'none' 
+        daynightChart.style.display = 'none'
+        container_6.style.display = 'block'
+        voipcalls.style.display = 'inline-block'
+        clear_filters.style.display = 'inline-block'
+
+    } else {
+        
+        container2.style.display = 'flex'; 
+        container4.style.display = 'none'; 
+        chartcontainer.style.display = 'block'; // Show chartcontainer
+        container.style.display = 'none'; // Show container
+        nightChartContainer.style.display = 'none';
+        dbcontainer.style.display = 'flex'; 
+        matched_dbstats.style.display = 'block' 
+        daynightChart.style.display = 'none'
+        container_6.style.display = 'none'
+        voipcalls.style.display = 'none'
+        clear_filters.style.display = 'none'
+    }
+    
+    }
+    
+    </script>
+    
+    <!-- SCRIPT FOR COUNT FUNCTIONS -->
+    
+<script>
+
+$(document).ready(function() {
+
+    probVoipCalls();
+    // towerTable();
+    // imeiTable();
+    voipMatchedTable();
+    voipMsisdnfoundTable();
+    populateDataTable();
+    daylocationTable();
+    nightlocationTable();
+    vpnUsedTable();
+    bpartyTable();
+    displayCount();
+    
+
+});
+
+
+function convertUTCDateToIST(dateString) {
+    var utcDate = new Date(dateString);
+    var istOffset = 5.5 * 60; 
+    var istDate = new Date(utcDate.getTime() + istOffset * 60000); 
+
+   
+    
+    var formattedDate = ('0' + (istDate.getMonth() + 1)).slice(-2) + '/' +
+                         ('0' + istDate.getDate()).slice(-2) + '/' +
+                        istDate.getFullYear() + ' ' +
+                        ('0' + istDate.getHours()).slice(-2) + ':' +
+                        ('0' + istDate.getMinutes()).slice(-2) + ':' +
+                        ('0' + istDate.getSeconds()).slice(-2);
+    return formattedDate;
+}
+
+
+
+
+function formatDate(dateObject) {
+  try {
+    // const dateString = dateObject.$date;
+    // const date = new Date(dateString);
+    const date = new Date(dateObject);
+
+    const options = {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit',
+    };
+
+    return date.toLocaleString('en-GB', options).replace(',', '');
+  } catch (error) {
+    console.error('Error parsing date:', error);
+    return 'Invalid date';
+  }
+}
+
+
+
+
+var voipCallsDataTable;  
+
+function setCustomAjaxParameters(data) {
+    const searchValue = document.getElementById('search-bar').value.trim();
+    filterValue = selectedFilterItems
+    console.log(searchValue,"searchvalue","filtervalue :",filterValue)
+    
+    const reportRangeSpan = document.getElementById('reportrange').querySelector('span');
+    const [startDate, endDate] = reportRangeSpan.textContent.split(' - ');
+    
+    data.filterValue = filterValue;  
+    data.searchValue = searchValue;
+    data.startDate = startDate;
+    data.endDate = endDate;
+
+    
+    if (voipCallsDataTable) {
+        data.inputText = voipCallsDataTable.search();
+    }
+}
+  
+
+
+function populateDataTable() {
+    console.log("datatable");
+
+    if (!voipCallsDataTable) {
+        console.log('Initializing DataTable');
+
+        voipCallsDataTable = $('#voipCallsTable2').DataTable({
+            "processing": true,
+            "serverSide": true,
+            "search": {
+                "return": true,
+                },
+            "dom": '<"top"l>Bfrtip', 
+            "pagingTop": true, 
+            "pagingBottom": true, 
+            "buttons": [
+                'copy', 'csv', 'excel', 'pdf', 'print',
+                
+            ],
+            "lengthMenu": [[10, 25, 50, 100, 250, 500, -1], [10, 25, 50, 100, 250, 500, "All"]],
+
+            "ajax": {
+                "url": `http://${window.location.hostname}:5005/voipcaltable`,
+                "type": "GET",
+                "data": setCustomAjaxParameters
+            },
+            "columns": [
+                { data: 'msisdn' },
+                { data: 'source_ip' },
+                { data: 'source_port' },
+                { data: 'destination_ip' },
+                { data: 'destination_port' },
+                {
+                    data: 'time',
+                    render: function(data, type, row) {
+                        return formatDate(data);
+                    }
+                },
+                { 
+                    data: 'end_time',
+                    render: function(data, type, row) {
+                        return formatDate(data);
+                    }
+                },
+              
+                { data: 'vendor' },
+                { data: 'cellid' }, 
+                { data: 'ipinfo' },
+                { data: 'matchedcall',defaultContent:'' },
+
+            ],
+        });
+
+        $('#voipCallsTable2_filter input').on('keyup', function(evt) {
+            var searchValue = $(this).val().trim();
+
+            if (searchValue.length <= 0) {
+                voipCallsDataTable.search('').draw();
+            }
+        });
+    } else {
+        voipCallsDataTable.ajax.reload();
+    }
+}
+
+
+// FUNCTION FOR DISPLAY DAY COUNT
+
+function displayDayCount(daycount) {
+    document.getElementById('daycount').innerHTML = ` ${daycount}`;
+}
+
+
+//  FUNCTION FOR DAY LOCATION
+
+var voipCallsDataTable1;  
+
+function setCustomAjaxParametersday(data) {
+    const searchValue = document.getElementById('search-bar').value.trim();
+    data.searchValue = searchValue;
+    if (voipCallsDataTable1) {
+        data.inputText = voipCallsDataTable1.search();
+    }
+}
+
+
+function daylocationTable() {
+
+if (!voipCallsDataTable1) {
+    console.log('Initializing DataTable');
+
+    voipCallsDataTable1 = $('#daylocation').DataTable({
+        "processing": true,
+        "serverSide": true,
+        "search": {
+                "return": true,
+                },
+        "dom": '<"top"l>Bfrtip', 
+        "buttons": [
+            'copy', 'csv', 'excel', 'pdf', 'print',
+           
+        ],
+        "lengthMenu": [[10, 25, 50, 100, 250, 500, -1], [10, 25, 50, 100, 250, 500, "All"]],
+        "ajax": {
+            "url": `http://${window.location.hostname}:5005/daylocation`,
+            "type": "GET",
+            "data": setCustomAjaxParametersday,
+            "dataSrc": function(json) {
+                displayDayCount(json.daycount);
+
+                console.log(json.data_dict)
+                    // renderChart(json.total_data);
+                    renderChart2(json.total_data,json.total_night_data)
+                return json.data_dict;
+            }
+        },
+        "columns": [
+        { data: 'nickname' },
+        { data: 'user_address' },
+        { data: 'source_number' },
+        { data: 'tower_id' },
+        { data: 'total_calls' },
+        ],
+        "columnDefs": [
+        { "width": "5%", "targets": 0 },  // For 'nickname'
+        { "width": "10%", "targets": 1 }, // For 'user_address'
+        { "width": "50%", "targets": 2 }, // For 'source_number'
+        { "width": "50%", "targets": 3 }, // For 'tower_id'
+        { "width": "30%", "targets": 4 }  // For 'total_calls'
+    ],
+    });
+
+    $('#daylocation_filter input').on('keyup', function(evt) {
+            var searchValue = $(this).val().trim();
+
+            if (searchValue.length <= 0) {
+                voipCallsDataTable1.search('').draw();
+            }
+        });
+} else {
+    voipCallsDataTable1.ajax.reload();
+}
+}
+
+
+
+
+
+// FUNCTION FOR NIGHT COUNT 
+function displaynightCount(nightcount) {
+    document.getElementById('nightcount').innerHTML = ` ${nightcount}`;
+}
+
+
+//FUNCTION FOR NIGHT LOCATION 
+
+var voipCallsDataTable2;  
+function setCustomAjaxParametersnight(data) {
+    const searchValue = document.getElementById('search-bar').value.trim();
+    data.searchValue = searchValue;
+    if (voipCallsDataTable2) {
+        data.inputText = voipCallsDataTable2.search();
+    }
+}
+
+
+function nightlocationTable() {
+
+if (!voipCallsDataTable2) {
+    console.log('Initializing DataTable');
+
+    voipCallsDataTable2 = $('#nightlocation').DataTable({
+        "processing": true,
+        "serverSide": true,
+        "search": {
+                "return": true,
+                },
+        "dom": '<"top"l>Bfrtip', 
+        "buttons": [
+            'copy', 'csv', 'excel', 'pdf', 'print',
+           
+        ],
+        "lengthMenu": [[10, 25, 50, 100, 250, 500, -1], [10, 25, 50, 100, 250, 500, "All"]],
+        "ajax": {
+            "url": `http://${window.location.hostname}:5005/nightlocation`,
+            "type": "GET",
+            "data": setCustomAjaxParametersnight,
+            "dataSrc": function(json) {
+                displaynightCount(json.nightcount);
+                // renderNightChart(json.total_data);
+                return json.data_dict;
+            }
+        },
+        "columns": [
+        { data: 'nickname' },
+        { data: 'user_address' },
+        { data: 'source_number' },
+        { data: 'tower_id' },
+        { data: 'total_calls' },
+        ],
+    });
+
+    $('#nightlocation_filter input').on('keyup', function(evt) {
+            var searchValue = $(this).val().trim();
+
+            if (searchValue.length <= 0) {
+                voipCallsDataTable2.search('').draw();
+            }
+        });
+} else {
+    voipCallsDataTable2.ajax.reload();
+}
+}
+
+
+
+
+// FUNCTION FOR VPN's
+
+var voipCallsDataTable3;  
+
+function setCustomAjaxParametersvpn(data) {
+    const searchValue = document.getElementById('search-bar').value.trim();
+    data.searchValue = searchValue;
+    if (voipCallsDataTable3) {
+        data.inputText = voipCallsDataTable3.search();
+    }
+    
+}
+
+
+
+function vpnUsedTable() {
+    if (!voipCallsDataTable3) {
+        console.log('Initializing DataTable');
+
+        voipCallsDataTable3 = $('#vpns_used').DataTable({
+            "processing": true,
+            "serverSide": true,
+            "search": {
+                "return": true,
+                },
+
+            "dom": '<"top"l>Bfrtip',
+            "buttons": ['copy', 'csv', 'excel', 'pdf', 'print'],
+            "lengthMenu": [[10, 25, 50, 100, 250, 500, -1], [10, 25, 50, 100, 250, 500, "All"]],
+            "ajax": {
+                "url": `http://${window.location.hostname}:5005/vpn_voip`,
+                "type": "GET",
+                "data": setCustomAjaxParametersvpn,
+                "dataSrc": "data" 
+          },
+          "columns": [
+        { data: 'vpn' },
+        {
+            data: 'time',
+            render: function(data, type, row) {
+                var momentDate = moment(data, 'YYYY-MM-DD HH:mm:ss', true);
+                
+                if (momentDate.isValid()) {
+                    return momentDate.format('YYYY-MM-DD HH:mm:ss');
+                } else {
+                    return 'Invalid Date';
+                }
+            }
+        },
+    ],
+
+        });
+
+        $('#vpns_used_filter input').on('keyup', function(evt) {
+            var searchValue = $(this).val().trim();
+
+            if (searchValue.length <= 0) {
+                voipCallsDataTable3.search('').draw();
+            }
+        });
+    } else {
+        voipCallsDataTable3.ajax.reload();
+    }
+}
+
+
+//FUNCTION FOR MATCHED CALLS
+
+var voipCallsDataTable4;  
+
+function setCustomAjaxParametersmatched(data) {
+    const searchValue = document.getElementById('search-bar').value.trim();
+    const reportRangeSpan = document.getElementById('reportrange').querySelector('span');
+    const [startDate, endDate] = reportRangeSpan.textContent.split(' - ');
+    
+    console.log(startDate,endDate)
+    data.searchValue = searchValue;
+    data.startDate = startDate;
+    data.endDate = endDate;
+
+    
+    if (voipCallsDataTable4) {
+        data.inputText = voipCallsDataTable4.search();
+    }
+}
+
+
+function voipMatchedTable() {
+    console.log("datatable");
+
+    if (!window.voipCallsDataTable4) {
+        console.log('Initializing matched DataTable');
+
+        window.voipCallsDataTable4 = $('#matchedCalls').DataTable({
+            "processing": true,
+            "serverSide": true,
+            "search": {
+                "return": true,
+                },
+            "dom": '<"top"l>Bfrtip',
+            "pagingTop": true,
+            "pagingBottom": true,
+            "buttons": [
+                'copy', 'csv', 'excel', 'pdf', 'print',
+            ],
+            "lengthMenu": [[10, 25, 50, 100, 250, 500, -1], [10, 25, 50, 100, 250, 500, "All"]],
+            "ajax": {
+                "url": `http://${window.location.hostname}:5005/voip_matchedcall`,
+                "type": "GET",
+                "data": setCustomAjaxParametersmatched
+            },
+            "columns": [
+                { data: 'ownerName' },
+                { data: 'caller2' },
+                {
+                    data: 'calltime',
+                    render: function (data, type, row) {
+                        return formatDate(data);
+                    }
+                },
+                { data: 'source_ip' },
+                { data: 'destination_ip' },
+                { data: 'ownerName_name' },
+                { data: 'caller2_name' },
+                {
+                    data: 'remarks', 
+                    defaultContent: '',
+                    render: function (data, type, row, meta) {
+                        return '<div contenteditable="true" class="editable-cell">' + (data ? data : '') + '</div>';
+                    }
+                },
+            ],
+        });
+
+        $('#matchedCalls').on('keypress', '.editable-cell', function(e) {
+            if (e.which == 13) { 
+                var newValue = $(this).text();
+                var rowData = window.voipCallsDataTable4.row($(this).closest('tr')).data();
+                var ownerName = rowData.ownerName;
+
+                $.ajax({
+                    url: `http://${window.location.hostname}:5005/update_remarks`,
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ ownerName: ownerName, remark: newValue }),
+                    success: function(response) {
+                        console.log(response.message);
+                    },
+                    error: function(xhr, status, error) {
+                        console.log("Error: " + error);
+                    }
+                });
+
+                e.preventDefault();
+            }
+        });
+
+        $('#matchedCalls_filter input').on('keyup', function(evt) {
+            var searchValue = $(this).val().trim();
+
+            if (searchValue.length <= 0) {
+                voipCallsDataTable4.search('').draw();
+            }
+        });        
+    } else {
+        window.voipCallsDataTable4.ajax.reload();
+    }
+}
+
+
+
+// FUNCTION FOR MSISDN FOUND
+var voipCallsDataTable5;  
+function setCustomAjaxParametersmsisdnfound(data) {
+    const searchValue = document.getElementById('search-bar').value.trim();
+    const reportRangeSpan = document.getElementById('reportrange').querySelector('span');
+    const [startDate, endDate] = reportRangeSpan.textContent.split(' - ');
+    console.log(startDate,endDate)
+    data.searchValue = searchValue;
+    data.startDate = startDate;
+    data.endDate = endDate;
+    
+    if (voipCallsDataTable5) {
+        data.inputText = voipCallsDataTable5.search();
+    }
+}
+
+
+
+
+function voipMsisdnfoundTable() {
+    console.log('Initializing DataTable');
+
+    if (!window.voipCallsDataTable5) {
+        window.voipCallsDataTable5 = $('#msisdnsfound').DataTable({
+            "processing": true,
+            "serverSide": true,
+            "search": {
+                "return": true,
+                },
+            "dom": '<"top"l>Bfrtip',
+            "buttons": [
+                'copy', 'csv', 'excel', 'pdf', 'print',
+            ],
+            "lengthMenu": [[10, 25, 50, 100, 250, 500, -1], [10, 25, 50, 100, 250, 500, "All"]],
+            "ajax": {
+                "url": `http://${window.location.hostname}:5005/voip_msisdnfound`,
+                "type": "GET",
+                "data": setCustomAjaxParametersmsisdnfound,
+                "error": function(xhr, error, thrown) {
+                    console.log("Error fetching data:", error);
+                }
+            },
+            "columns": [
+                { data: 'ownerName' },
+                {
+                    data: 'name',
+                    defaultContent: '',
+                    render: function (data, type, row, meta) {
+                        return '<div contenteditable="true" class="editable-cell name-cell">' + (data ? data : '') + '</div>';
+                    }
+                },
+                {
+                    data: 'notes',
+                    defaultContent: '',
+                    render: function (data, type, row, meta) {
+                        return '<div contenteditable="true" class="editable-cell notes-cell">' + (data ? data : '') + '</div>';
+                    }
+                },
+            ],
+        });
+
+        $('#msisdnsfound').on('keypress', '.editable-cell', function(e) {
+            if (e.which == 13) { 
+                var currentRow = $(this).closest('tr');
+                var ownerName = currentRow.find('td').eq(0).text(); 
+                var name = currentRow.find('.name-cell').text();
+                var notes = currentRow.find('.notes-cell').text();
+
+               
+                $.ajax({
+                    url: `http://${window.location.hostname}:5005/updatecallers`,
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ ownerName: ownerName, name: name, notes: notes }),
+                    success: function(response) {
+                        console.log(response.message);
+                    },
+                    error: function(xhr, status, error) {
+                        console.log("Error: " + error);
+                    }
+                });
+
+                e.preventDefault();
+            }
+        });
+
+        $('#msisdnsfound_filter input').on('keyup', function(evt) {
+            var searchValue = $(this).val().trim();
+
+            if (searchValue.length <= 0) {
+                voipCallsDataTable5.search('').draw();
+            }
+        });  
+    } else {
+        window.voipCallsDataTable5.ajax.reload();
+    }
+}
+
+//FUNCTION FOR PROBVOIPCALLS 
+
+// probVoipCalls
+
+
+var probVoipCallsDataTable;  
+
+function probVoipCallsParameters(data) {
+    const searchValue = document.getElementById('search-bar').value.trim();
+    filterValue = selectedFilterItems
+    console.log(searchValue,"searchvalue","filtervalue :",filterValue)
+    
+    const reportRangeSpan = document.getElementById('reportrange').querySelector('span');
+    const [startDate, endDate] = reportRangeSpan.textContent.split(' - ');
+    
+    data.filterValue = filterValue;  
+    data.searchValue = searchValue;
+    data.startDate = startDate;
+    data.endDate = endDate;
+
+    
+    if (probVoipCallsDataTable) {
+        data.inputText = probVoipCallsDataTable.search();
+    }
+}
+  
+
+
+function probVoipCalls() {
+    console.log("datatable");
+
+    if (!probVoipCallsDataTable) {
+        console.log('Initializing DataTable');
+
+        probVoipCallsDataTable = $('#probVoipCalls').DataTable({
+            "processing": true,
+            "serverSide": true,
+            "search": {
+                "return": true,
+                },
+            "dom": '<"top"l>Bfrtip', 
+            "pagingTop": true, 
+            "pagingBottom": true, 
+            "buttons": [
+                'copy', 'csv', 'excel', 'pdf', 'print',
+                
+            ],
+            "lengthMenu": [[10, 25, 50, 100, 250, 500, -1], [10, 25, 50, 100, 250, 500, "All"]],
+
+            "ajax": {
+                "url": `http://${window.location.hostname}:5005/probVoipCalls`,
+                "type": "GET",
+                "data": probVoipCallsParameters
+            },
+            "columns": [
+                { data: 'msisdn' },
+                { data: 'source_ip' },
+                { data: 'source_port' },
+                { data: 'destination_ip' },
+                { data: 'destination_port' },
+                
+                {
+                    data: 'time',
+                    defaultContent:'',
+                    render: function(data, type, row) {
+                        return formatDate(data);
+                    }
+                },
+
+                {
+                    data: 'end_time',
+                    defaultContent:'',
+                    render: function(data, type, row) {
+                        return formatDate(data);
+                    }
+                },
+                { data: 'cellid' },
+                { data: 'ipinfo',defaultContent:'' },
+        
+
+            ],
+        });
+
+        $('#probVoipCallsDataTable_filter input').on('keyup', function(evt) {
+            var searchValue = $(this).val().trim();
+
+            if (searchValue.length <= 0) {
+                probVoipCallsDataTable.search('').draw();
+            }
+        });
+    } else {
+        probVoipCallsDataTable.ajax.reload();
+    }
+}
+
+
+
+//  FUNCTION FOR BPARTY
+
+
+function displayBpartyCount(bpartycount) {
+    document.getElementById('bparty_count').innerHTML = ` ${bpartycount}`;
+}
+
+
+var bpartyTable1;  
+function setCustomAjaxParametersbparty(data) {
+    const searchValue = document.getElementById('search-bar').value.trim();
+    data.searchValue = searchValue;
+    if (bpartyTable1) {
+        data.inputText = bpartyTable1.search();
+    }
+}
+
+
+
+function bpartyTable() {
+    if (!bpartyTable1) {
+        console.log('Initializing DataTable');
+
+        bpartyTable1 = $('#bparty_numbers').DataTable({
+            "processing": true,
+            "serverSide": true,
+            "search": {
+                "return": true,
+                },
+            "dom": '<"top"l>Bfrtip', // Adjust the dom option
+            "buttons": [
+                'copy', 'csv', 'excel', 'pdf', 'print',
+               
+            ],
+            "lengthMenu": [[10, 25, 50, 100, 250, 500, -1], [10, 25, 50, 100, 250, 500, "All"]],
+            "ajax": {
+                "url": `http://${window.location.hostname}:5005/bpartyNumbers`,
+                "type": "GET",
+                "data": setCustomAjaxParametersbparty,
+                "dataSrc": function(json) {
+                    displayBpartyCount(json.bpartycount);
+
+                    return json.data;
+                },
+            },
+            "columns": [
+            { data: 'ownerName' },
+            { data: 'caller2' },
+            ],
+        });
+
+        $('#bparty_numbers_filter input').on('keyup', function(evt) {
+            var searchValue = $(this).val().trim();
+
+            if (searchValue.length <= 0) {
+                bpartyTable1.search('').draw();
+            }
+        }); 
+    } else {
+        bpartyTable1.ajax.reload();
+    }
+}
+
+
+
+// FUNCTION FOR IMEI 
+
+var Imeitable;  
+function setCustomAjaxParametersimei(data) {
+    const searchValue = document.getElementById('search-bar').value.trim();
+    const reportRangeSpan = document.getElementById('reportrange').querySelector('span');
+    const [startDate, endDate] = reportRangeSpan.textContent.split(' - ');
+    
+    data.searchValue = searchValue;
+    data.startDate = startDate;
+    data.endDate = endDate;
+
+    
+    if (Imeitable) {
+        data.inputText = Imeitable.search();
+    }
+}
+
+
+function displayImeiCount(imei) {
+    document.getElementById('imei').innerHTML = `imei: ${imei}`;
+}
+
+
+function imeiTable() {
+
+    if (!Imeitable) {
+        console.log('Initializing DataTable');
+
+        Imeitable = $('#imei_table').DataTable({
+            "processing": true,
+            "serverSide": true,
+            "search": {
+                "return": true,
+                },
+            "dom": '<"top"l>Bfrtip', 
+            "buttons": [
+                'copy', 'csv', 'excel', 'pdf', 'print',
+               
+            ],
+            "lengthMenu": [[10, 25, 50, 100, 250, 500, -1], [10, 25, 50, 100, 250, 500, "All"]],
+            "ajax": {
+                "url": `http://${window.location.hostname}:5005/imei`,
+                "type": "GET",
+                "data": setCustomAjaxParametersimei,
+                "dataSrc": function(json) {
+                    displayImeiCount(json.count);
+
+                    return json.data;
+                }
+            },
+            "columns": [
+            { data: 'ownerName' },
+            { data: 'imei' },
+            {
+                    data: 'time',
+                    defaultContent:'',
+                    render: function(data, type, row) {
+                        return formatDate(data);
+                    }
+                },
+            ],
+        });
+
+        $('#imei_table_filter input').on('keyup', function(evt) {
+            var searchValue = $(this).val().trim();
+
+            if (searchValue.length <= 0) {
+                Imeitable.search('').draw();
+            }
+        }); 
+    } else {
+        Imeitable.ajax.reload();
+    }
+}
+
+
+//SCRIPT FOR TOWER
+
+
+var tower_table;  
+
+function setCustomAjaxParameterstower(data) {
+    const searchValue = document.getElementById('search-bar').value.trim();
+    const reportRangeSpan = document.getElementById('reportrange').querySelector('span');
+    const [startDate, endDate] = reportRangeSpan.textContent.split(' - ');
+    
+    data.searchValue = searchValue;
+    data.startDate = startDate;
+    data.endDate = endDate;
+
+    
+    if (tower_table) {
+        data.inputText = tower_table.search();
+    }
+}
+
+
+function displaytowerCount(tower) {
+    document.getElementById('tower').innerHTML = ` ${tower}`;
+}
+
+function towerTable() {
+
+    if (!tower_table) {
+        console.log('Initializing DataTable');
+
+        tower_table = $('#tower_table').DataTable({
+            "processing": true,
+            "serverSide": true,
+            "search": {
+                "return": true,
+                },
+            "dom": '<"top"l>Bfrtip', 
+            "buttons": [
+                'copy', 'csv', 'excel', 'pdf', 'print',
+               
+            ],
+            "lengthMenu": [[10, 25, 50, 100, 250, 500, -1], [10, 25, 50, 100, 250, 500, "All"]],
+            "ajax": {
+                "url": `http://${window.location.hostname}:5005/tower`,
+                "type": "GET",
+                "data": setCustomAjaxParameterstower,
+                "dataSrc": function(json) {
+                    displaytowerCount(json.count);
+                    
+                    console.log(json.owners_data)
+                    return json.owners_data;
+                }
+            },
+            "columns": [
+            { data: 'ownerName' },
+            { data: 'areadescription',defaultContent:'' },
+            {
+                data: 'time',
+                defaultContent:'',
+                render: function(data, type, row) {
+                    if (type === 'display') {
+                        return moment(data).format('DD/MM/YYYY HH:mm:ss');
+                    }
+
+                    return data;
+                }
+            },
+                
+            ],
+        });
+
+        $('#tower_table_filter input').on('keyup', function(evt) {
+            var searchValue = $(this).val().trim();
+
+            if (searchValue.length <= 0) {
+                tower_table.search('').draw();
+            }
+        }); 
+    } else {
+        tower_table.ajax.reload();
+    }
+}
+
+
+//FUNCTION FOR DISPLAY COUNT 
+
+function create3DPieChart(data) {
+    Highcharts.chart('chartcontainer', {
+        chart: {
+            type: 'pie',
+            options3d: {
+                enabled: true,
+                alpha: 45
+            }
+        },
+        title: {
+            text: 'VOIP CALLS ACTIVITY'
+        },
+        subtitle: {
+            text: '3D Pie Chart'
+        },
+        plotOptions: {
+            pie: {
+                // innerSize: 100,
+                depth: 45
+            }
+        },
+        series: [{
+            name: 'Usage Count',
+            data: [
+                { name: 'WhatsApp', y: data.whatsapp_count, color: '#ff6384' },  
+                { name: 'Telegram', y: data.telegram_count, color: '#36a2eb' },  
+                { name: 'FaceTime', y: data.facetime_count, color: '#ffcd56' },  
+                { name: 'Signal', y: data.signal_count, color: '#4bc0c0' }    
+            ]
+        }]
+    });
+}
+
+
+async function fetchWhatsAppCount(searchValue) {
+    try {
+      
+      const response = await fetch(`http://${window.location.hostname}:5005/dash_profile?search=${encodeURIComponent(searchValue)}`);
+      const data = await response.json();
+      console.log('Response from server:', data);
+      create3DPieChart(data);
+      return {
+        vpn_count : data.vpn_count,
+        voipcalls : data.whatsapp_count + data.telegram_count + data.facetime_count + data.signal_count,
+    };
+    } catch (error) {
+      console.error('Error fetching WhatsApp count:', error);
+    }
+  }
+
+async function displayCount(){
+const searchValue = document.getElementById('search-bar').value.trim();
+
+
+const voipcalls = document.getElementById('voipcall-count')
+const voipcalls_card = document.getElementById('voipcount_card')
+
+const bparty = document.getElementById('bparty_count')
+const vpns = document.getElementById('vpn_count')
+const daycount = document.getElementById('daycount')
+const nightcount = document.getElementById('nightcount')
+
+
+
+const sanitizedSearchValue = searchValue || '';
+
+const whatsappCount =  await fetchWhatsAppCount(sanitizedSearchValue);
+
+
+if (true) {
+voipcalls.innerHTML = `${whatsappCount.voipcalls}`;
+// voipcalls_card.innerHTML = `${whatsappCount.voipcalls}`;
+vpns.innerHTML = ` ${whatsappCount.vpn_count}`;
+
+}
+
+}
+
+//dayNightChartContainer
+
+function renderChart2(totalData, totalNightData) {
+    // Initialize a map to store combined data
+    var combinedData = {};
+
+    console.log(totalData,totalNightData,"combined data")
+    // Process totalData
+    totalData.forEach(function(item) {
+        if (!combinedData[item.tower_id]) {
+            combinedData[item.tower_id] = { day: item.total_calls, night: 0 };
+        } else {
+            combinedData[item.tower_id].day = item.total_calls;
+        }
+    });
+
+    // Process totalNightData
+    totalNightData.forEach(function(item) {
+        if (!combinedData[item.tower_id]) {
+            combinedData[item.tower_id] = { day: 0, night: item.total_calls };
+        } else {
+            combinedData[item.tower_id].night = item.total_calls;
+        }
+    });
+
+    // Prepare data for Highcharts
+    var categories = Object.keys(combinedData);
+    var dayData = categories.map(function(tower_id) { return combinedData[tower_id].day; });
+    var nightData = categories.map(function(tower_id) { return combinedData[tower_id].night; });
+
+    // Render the chart
+    Highcharts.chart('dayNightChartContainer', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Total Calls per Tower ID (Day and Night)'
+        },
+        xAxis: {
+            categories: categories
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Total Calls'
+            },
+            allowDecimals: false
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Day Calls',
+            data: dayData
+        }, {
+            name: 'Night Calls',
+            data: nightData
+        }]
+    });
+}
+
+
+
+
+function renderChart(data) {
+    // Process data to fit Highcharts format
+    var seriesData = data.map(function(item) {
+        return {
+            name: item.tower_id,
+            y: item.total_calls
+        };
+    });
+
+    // Render the chart
+    Highcharts.chart('container', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Total Calls per Tower ID'
+        },
+        xAxis: {
+            type: 'category',
+            title: {
+                text: 'Tower ID'
+            },
+            categories: data.map(function(item) { return item.tower_id; })
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Total Calls'
+            }
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Calls',
+            data: seriesData
+        }]
+    });
+}
+
+function renderNightChart(data) {
+    var seriesData = data.map(function(item) {
+        return {
+            name: item.tower_id,
+            y: item.total_calls
+        };
+    });
+
+    Highcharts.chart('nightChartContainer', {
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Total Calls per Tower ID at Night'
+        },
+        xAxis: {
+            type: 'category',
+            title: {
+                text: 'Tower ID'
+            },
+            categories: data.map(function(item) { return item.tower_id; })
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Total Calls'
+            }
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Calls',
+            data: seriesData
+        }]
+    });
+}
+
+
+
+
+
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        if (!event.target.matches('.dropdown-content *')) { 
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+};
+
+
+
+var selectedFilterItems = [];
+
+
+
+function clearFilters() {
+    var checkboxes = document.querySelectorAll(".dropdown-content .call-option-checkbox");
+    checkboxes.forEach(function(checkbox) {
+        checkbox.checked = false;
+    });
+
+    handleCheckboxChange();
+}
+
+function handleCheckboxChange() {
+    var checkedBoxes = document.querySelectorAll(".dropdown-content .call-option-checkbox:checked");
+    selectedFilterItems = Array.from(checkedBoxes).map(function(item) {
+        return item.value;
+    });
+
+    // Refresh the DataTable here if it's already initialized
+    $('#voipCallsTable2').DataTable().ajax.reload();
+    console.log("Selected Items:", selectedFilterItems); 
+}
+
+
+
+
+function setupCheckboxListeners() {
+    var checkboxes = document.querySelectorAll(".call-option-checkbox");
+    checkboxes.forEach(function(checkbox) {
+        checkbox.addEventListener('change', handleCheckboxChange);
+
+
+    });
+}
+
+setupCheckboxListeners();
+
+document.getElementById("clearFiltersButton").addEventListener('click', clearFilters);
+
+
+
+
+$(document).ready(function() {
+
+    var container4 = document.querySelector('.container_4');
+    var chartcontainer = document.getElementById('chartcontainer');
+    var container = document.getElementById('container');
+    var nightChartContainer = document.getElementById('nightChartContainer');
+
+
+    container4.style.display = 'none';
+    chartcontainer.style.display = 'flex'; // Hide chartcontainer
+    container.style.display = 'none'; // Hide container
+    nightChartContainer.style.display = 'none'; 
+    dayNightChartContainer.style.display = 'none'
+
+    $('.button-1').click(function() {
+        console.log("HOME")
+        $('.container_2').show();
+        $('.container_4').hide();
+        $('.container_6').hide();
+        $('#chartcontainer').show();
+        $('.dbcontainer').show()
+        $('#container').hide();
+        $('#matched_dbstats').show()
+        $('#nightChartContainer').hide()
+        $('#dayNightChartContainer').show()
+        $('.dropbtn').hide()
+        $('.clear_filters').hide()
+
+
+
+    });
+
+
+    $('#voipcallsbutton').click(function() {
+
+        $('#probVoipCalls_wrapper').hide();
+
+
+        $('#bparty_numbers_wrapper').hide();
+        $('#daylocation_wrapper').hide();
+        $('#nightlocation_wrapper').hide();
+        $('#vpns_used_wrapper').hide();
+        $('#tabs').show();
+        $('#map').hide();
+
+
+        $('#container').hide();
+        $('#nightChartContainer').hide();
+        $('#chartContainer').show();
+        $('#dayNightChartContainer').hide()
+
+
+    });
+
+    $('#showBpartyTableButton').click(function() {
+        $('#bparty_numbers_wrapper').show();
+        $('#daylocation_wrapper').hide();
+        $('#nightlocation_wrapper').hide();
+        $('#vpns_used_wrapper').hide();
+        $('#tabs').hide();
+        $('#map').hide();
+        $('#container').hide();
+        $('#nightChartContainer').hide();
+        $('#dayNightChartContainer').hide()
+        $('#probVoipCalls_wrapper').hide();
+
+
+
+    });
+
+    $('#showDayTableButton').click(function() {
+        $('#daylocation_wrapper').show();
+        $('#container').hide();
+        $('#nightChartContainer').hide();
+
+        $('#bparty_numbers_wrapper').hide();
+        $('#nightlocation_wrapper').hide();
+        $('#vpns_used_wrapper').hide();
+        $('#tabs').hide();
+        $('#map').hide();
+        $('#dayNightChartContainer').hide()
+        $('#probVoipCalls_wrapper').hide();
+
+
+    });
+
+    $('#nightlocatiobbutton').click(function() {
+        $('#nightlocation_wrapper').show();
+        $('#nightChartContainer').hide();
+
+        $('#container').hide();
+
+        $('#dayNightChartContainer').hide()
+
+        
+        $('#daylocation_wrapper').hide();
+        $('#bparty_numbers_wrapper').hide();
+        $('#vpns_used_wrapper').hide();
+        $('#tabs').hide();
+        $('#map').hide();
+        $('#probVoipCalls_wrapper').hide();
+
+    });
+
+    $('#vpnsusedbutton').click(function() {
+        $('#vpns_used_wrapper').show();
+
+        $('#daylocation_wrapper').hide();
+        $('#bparty_numbers_wrapper').hide();
+        $('#nightlocation_wrapper').hide();
+        $('#tabs').hide();
+        $('#map').hide();
+        $('#container').hide();
+        $('#nightChartContainer').hide();
+        $('#dayNightChartContainer').hide()
+        $('#probVoipCalls_wrapper').hide();
+
+
+    });
+
+    $('#prob_voipcallsbutton').click(function() {
+        $('#probVoipCalls_wrapper').show();
+
+        $('#vpns_used_wrapper').hide();
+
+        $('#daylocation_wrapper').hide();
+        $('#bparty_numbers_wrapper').hide();
+        $('#nightlocation_wrapper').hide();
+        $('#tabs').hide();
+        $('#map').hide();
+        $('#container').hide();
+        $('#nightChartContainer').hide();
+        $('#dayNightChartContainer').hide()
+
+    });
+
+//     $('#mapbutton').click(function() {
+//         document.getElementById('map').style.display = 'inline-block';
+
+//         $('#bparty_numbers_wrapper').hide();
+//         $('#daylocation_wrapper').hide();
+//         $('#nightlocation_wrapper').hide();
+//         $('#vpns_used_wrapper').hide();
+//         $('#tabs').hide();
+//         $('#container').hide();
+//         $('#nightChartContainer').hide();
+//         $('#dayNightChartContainer').hide()
+
+//     if (map) {
+//         console.log("mapp")
+//     map.invalidateSize();
+// }
+//     });
+    
+
+});
+
+
+</script>
+
+
+
+
+
+<script type="text/javascript">
+
+    $(function() {
+        var start = moment().subtract(5, 'years');
+        var end = moment().add(5,"years");
+  // created inital 10 years , if need to change default value , we need to change in backend , /voipcaltable
+        function cb(start, end) {
+          $('#reportrange span').html(start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY'));
+        }
+  
+        $('#reportrange').daterangepicker({
+          startDate: start,
+          endDate: end,
+          ranges: {
+            'Today': [moment(), moment()],
+            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+            'This Month': [moment().startOf('month'), moment().endOf('month')],
+            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+          }
+        }, cb);
+  
+        cb(start, end);
+  
+        $('#reportrange').on('apply.daterangepicker', function(ev, picker) {
+          var startDate = picker.startDate;
+          var endDate = picker.endDate;
+  
+  
+            populateDataTable()
+            voipMatchedTable()
+  
+          console.log(startDate,endDate,"./././././././././.")
+        });
+
+
+
+        $('#clearDateRange').click(function() {
+        $('#reportrange').data('daterangepicker').setStartDate(start);
+        $('#reportrange').data('daterangepicker').setEndDate(end);
+        cb(start, end); // Update the display
+
+        populateDataTable()
+        voipMatchedTable()
+
+    });
+
+
+      });
+  </script>
+  
+
+

@@ -1,0 +1,461 @@
+nodata
+{'received_at': 1713710922.432871, 'first': 0.0007803440093994141, 'res': 0.06454181671142578}
+nodata
+{'received_at': 1713712672.5499952, 'first': 0.0005505084991455078, 'res': 0.06913495063781738}
+{'title': 'function starts', 'time': '30-04-2024 16:58:28', 'timestamp': 1714476508.2038333}
+{'title': 'Aggregation for cda profile starts', 'time': '30-04-2024 16:58:28', 'timestamp': 1714476508.2045991}
+{'title': 'Aggregation ends', 'time': '30-04-2024 16:58:28', 'querytime': 0.2815868854522705}
+{'title': 'Aggregation for contacts starts', 'time': '30-04-2024 16:58:28', 'timestamp': 1714476508.4861896}
+{'title': 'Aggregation ends', 'time': '30-04-2024 16:58:28', 'querytime': 0.058762311935424805}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '30-04-2024 16:58:28', 'timestamp': 1714476508.5470502}
+{'title': 'python iteration ends', 'time': '30-04-2024 16:58:29', 'iteration time': 0.6912579536437988}
+{'title': 'Function ends', 'time': '30-04-2024 16:58:29', 'processing time': 1.0344786643981934}
+{'received_at': 1714476508.1969314, 'first': 0.0007405281066894531, 'res': 1.0466020107269287}
+{'title': 'function starts', 'time': '30-04-2024 17:04:46', 'timestamp': 1714476886.637405}
+{'title': 'Aggregation for cda profile starts', 'time': '30-04-2024 17:04:46', 'timestamp': 1714476886.638574}
+{'title': 'Aggregation ends', 'time': '30-04-2024 17:04:46', 'querytime': 0.18787026405334473}
+{'title': 'Aggregation for contacts starts', 'time': '30-04-2024 17:04:46', 'timestamp': 1714476886.8264496}
+{'title': 'Aggregation ends', 'time': '30-04-2024 17:04:46', 'querytime': 0.0627450942993164}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '30-04-2024 17:04:46', 'timestamp': 1714476886.8905785}
+{'title': 'python iteration ends', 'time': '30-04-2024 17:04:47', 'iteration time': 0.6231322288513184}
+{'title': 'Function ends', 'time': '30-04-2024 17:04:47', 'processing time': 0.8763117790222168}
+{'received_at': 1714476886.612946, 'first': 0.0016379356384277344, 'res': 0.9037237167358398}
+nodata
+{'received_at': 1714642697.3582392, 'first': 0.0006055831909179688, 'res': 0.01674652099609375}
+nodata
+{'received_at': 1714642734.1337352, 'first': 0.0008502006530761719, 'res': 0.00967097282409668}
+nodata
+{'received_at': 1714642932.4251397, 'first': 0.0010311603546142578, 'res': 0.03981733322143555}
+nodata
+{'received_at': 1714779050.802972, 'first': 0.0008096694946289062, 'res': 0.041333675384521484}
+{'title': 'function starts', 'time': '04-05-2024 05:02:13', 'timestamp': 1714779133.9949174}
+{'title': 'Aggregation for cda profile starts', 'time': '04-05-2024 05:02:13', 'timestamp': 1714779133.9951344}
+{'title': 'Aggregation ends', 'time': '04-05-2024 05:02:14', 'querytime': 0.10569930076599121}
+{'title': 'Aggregation for contacts starts', 'time': '04-05-2024 05:02:14', 'timestamp': 1714779134.1008377}
+{'title': 'Aggregation ends', 'time': '04-05-2024 05:02:14', 'querytime': 0.03725242614746094}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '04-05-2024 05:02:14', 'timestamp': 1714779134.138494}
+{'title': 'python iteration ends', 'time': '04-05-2024 05:02:14', 'iteration time': 0.26665425300598145}
+{'title': 'Function ends', 'time': '04-05-2024 05:02:14', 'processing time': 0.4102342128753662}
+{'received_at': 1714779133.9910004, 'first': 0.0005903244018554688, 'res': 0.41788196563720703}
+{'title': 'function starts', 'time': '04-05-2024 05:06:40', 'timestamp': 1714779400.6620502}
+{'title': 'Aggregation for cda profile starts', 'time': '04-05-2024 05:06:40', 'timestamp': 1714779400.6623309}
+{'title': 'Aggregation ends', 'time': '04-05-2024 05:06:40', 'querytime': 0.14870786666870117}
+{'title': 'Aggregation for contacts starts', 'time': '04-05-2024 05:06:40', 'timestamp': 1714779400.811042}
+{'title': 'Aggregation ends', 'time': '04-05-2024 05:06:40', 'querytime': 0.019128084182739258}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '04-05-2024 05:06:40', 'timestamp': 1714779400.8307056}
+{'title': 'python iteration ends', 'time': '04-05-2024 05:06:41', 'iteration time': 0.24692964553833008}
+{'title': 'Function ends', 'time': '04-05-2024 05:06:41', 'processing time': 0.41558837890625}
+{'received_at': 1714779400.6571755, 'first': 0.0006551742553710938, 'res': 0.423494815826416}
+{'title': 'function starts', 'time': '06-05-2024 01:18:30', 'timestamp': 1714938510.5925274}
+{'title': 'Aggregation for cda profile starts', 'time': '06-05-2024 01:18:30', 'timestamp': 1714938510.5931516}
+{'title': 'Aggregation ends', 'time': '06-05-2024 01:18:33', 'querytime': 2.912400007247925}
+{'title': 'Aggregation for contacts starts', 'time': '06-05-2024 01:18:33', 'timestamp': 1714938513.5055556}
+{'title': 'Aggregation ends', 'time': '06-05-2024 01:18:34', 'querytime': 0.7534637451171875}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '06-05-2024 01:18:34', 'timestamp': 1714938514.259521}
+{'title': 'python iteration ends', 'time': '06-05-2024 01:18:38', 'iteration time': 4.1963372230529785}
+{'title': 'Function ends', 'time': '06-05-2024 01:18:38', 'processing time': 7.8633341789245605}
+{'received_at': 1714938510.587639, 'first': 0.0009472370147705078, 'res': 7.96205997467041}
+{'title': 'function starts', 'time': '07-05-2024 15:56:45', 'timestamp': 1715077605.5872245}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 15:56:45', 'timestamp': 1715077605.5875094}
+{'title': 'Aggregation ends', 'time': '07-05-2024 15:56:46', 'querytime': 1.0744664669036865}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 15:56:46', 'timestamp': 1715077606.6619792}
+{'title': 'Aggregation ends', 'time': '07-05-2024 15:56:46', 'querytime': 0.2997627258300781}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 15:56:46', 'timestamp': 1715077606.9620557}
+{'title': 'python iteration ends', 'time': '07-05-2024 15:56:50', 'iteration time': 3.115405321121216}
+{'title': 'Function ends', 'time': '07-05-2024 15:56:50', 'processing time': 4.490239858627319}
+{'received_at': 1715077605.5820963, 'first': 0.0005784034729003906, 'res': 4.525769948959351}
+{'title': 'function starts', 'time': '07-05-2024 15:58:00', 'timestamp': 1715077680.9323657}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 15:58:00', 'timestamp': 1715077680.9325986}
+{'title': 'Aggregation ends', 'time': '07-05-2024 15:58:02', 'querytime': 1.162938117980957}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 15:58:02', 'timestamp': 1715077682.0955405}
+{'title': 'Aggregation ends', 'time': '07-05-2024 15:58:02', 'querytime': 0.3175947666168213}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 15:58:02', 'timestamp': 1715077682.4134738}
+{'title': 'python iteration ends', 'time': '07-05-2024 15:58:05', 'iteration time': 2.594416618347168}
+{'title': 'Function ends', 'time': '07-05-2024 15:58:05', 'processing time': 4.075528383255005}
+{'received_at': 1715077680.9282105, 'first': 0.0005738735198974609, 'res': 4.119156360626221}
+{'title': 'function starts', 'time': '07-05-2024 15:58:33', 'timestamp': 1715077713.8986337}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 15:58:33', 'timestamp': 1715077713.8995428}
+{'title': 'Aggregation ends', 'time': '07-05-2024 15:58:34', 'querytime': 1.0657227039337158}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 15:58:34', 'timestamp': 1715077714.9652703}
+{'title': 'Aggregation ends', 'time': '07-05-2024 15:58:35', 'querytime': 0.3016386032104492}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 15:58:35', 'timestamp': 1715077715.2672963}
+{'title': 'python iteration ends', 'time': '07-05-2024 15:58:37', 'iteration time': 2.550924062728882}
+{'title': 'Function ends', 'time': '07-05-2024 15:58:37', 'processing time': 3.9195897579193115}
+{'received_at': 1715077713.8882463, 'first': 0.0005350112915039062, 'res': 3.9591574668884277}
+{'title': 'function starts', 'time': '07-05-2024 15:58:47', 'timestamp': 1715077727.629862}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 15:58:47', 'timestamp': 1715077727.6300354}
+{'title': 'Aggregation ends', 'time': '07-05-2024 15:58:48', 'querytime': 1.0460286140441895}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 15:58:48', 'timestamp': 1715077728.676067}
+{'title': 'Aggregation ends', 'time': '07-05-2024 15:58:48', 'querytime': 0.3057212829589844}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 15:58:48', 'timestamp': 1715077728.9820967}
+{'title': 'python iteration ends', 'time': '07-05-2024 15:58:52', 'iteration time': 3.954716205596924}
+{'title': 'Function ends', 'time': '07-05-2024 15:58:52', 'processing time': 5.3069539070129395}
+{'received_at': 1715077727.6265967, 'first': 0.00048470497131347656, 'res': 5.340852737426758}
+{'title': 'function starts', 'time': '07-05-2024 15:58:50', 'timestamp': 1715077730.0325718}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 15:58:50', 'timestamp': 1715077730.032908}
+{'title': 'Aggregation ends', 'time': '07-05-2024 15:58:51', 'querytime': 1.5650434494018555}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 15:58:51', 'timestamp': 1715077731.597955}
+{'title': 'Aggregation ends', 'time': '07-05-2024 15:58:51', 'querytime': 0.2309401035308838}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 15:58:51', 'timestamp': 1715077731.8294806}
+{'title': 'python iteration ends', 'time': '07-05-2024 15:58:56', 'iteration time': 4.831934213638306}
+{'title': 'Function ends', 'time': '07-05-2024 15:58:56', 'processing time': 6.628846168518066}
+{'received_at': 1715077730.0268574, 'first': 0.0005612373352050781, 'res': 6.665272235870361}
+{'title': 'function starts', 'time': '07-05-2024 15:58:53', 'timestamp': 1715077733.4687927}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 15:58:53', 'timestamp': 1715077733.4696016}
+{'title': 'Aggregation ends', 'time': '07-05-2024 15:58:54', 'querytime': 1.4327373504638672}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 15:58:54', 'timestamp': 1715077734.902342}
+{'title': 'Aggregation ends', 'time': '07-05-2024 15:58:55', 'querytime': 0.3139028549194336}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 15:58:55', 'timestamp': 1715077735.216795}
+{'title': 'python iteration ends', 'time': '07-05-2024 15:59:00', 'iteration time': 4.934213876724243}
+{'title': 'Function ends', 'time': '07-05-2024 15:59:00', 'processing time': 6.6822192668914795}
+{'received_at': 1715077733.4629364, 'first': 0.0005421638488769531, 'res': 6.718677282333374}
+{'title': 'function starts', 'time': '07-05-2024 15:58:55', 'timestamp': 1715077735.4946983}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 15:58:55', 'timestamp': 1715077735.4961207}
+{'title': 'Aggregation ends', 'time': '07-05-2024 15:58:57', 'querytime': 1.9416136741638184}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 15:58:57', 'timestamp': 1715077737.4377375}
+{'title': 'Aggregation ends', 'time': '07-05-2024 15:58:57', 'querytime': 0.3275432586669922}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 15:58:57', 'timestamp': 1715077737.7658772}
+{'title': 'python iteration ends', 'time': '07-05-2024 15:59:01', 'iteration time': 3.5275332927703857}
+{'title': 'Function ends', 'time': '07-05-2024 15:59:01', 'processing time': 5.798715114593506}
+{'received_at': 1715077735.4805639, 'first': 0.0011849403381347656, 'res': 5.844841241836548}
+{'title': 'function starts', 'time': '07-05-2024 15:59:03', 'timestamp': 1715077743.6575866}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 15:59:03', 'timestamp': 1715077743.6578414}
+{'title': 'Aggregation ends', 'time': '07-05-2024 15:59:04', 'querytime': 1.097175121307373}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 15:59:04', 'timestamp': 1715077744.7550204}
+{'title': 'Aggregation ends', 'time': '07-05-2024 15:59:05', 'querytime': 0.2790377140045166}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 15:59:05', 'timestamp': 1715077745.034336}
+{'title': 'python iteration ends', 'time': '07-05-2024 15:59:09', 'iteration time': 4.270093202590942}
+{'title': 'Function ends', 'time': '07-05-2024 15:59:09', 'processing time': 5.646845579147339}
+{'received_at': 1715077743.6534753, 'first': 0.0006253719329833984, 'res': 5.681781530380249}
+{'title': 'function starts', 'time': '07-05-2024 15:59:05', 'timestamp': 1715077745.4916952}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 15:59:05', 'timestamp': 1715077745.4921582}
+{'title': 'Aggregation ends', 'time': '07-05-2024 15:59:06', 'querytime': 1.484647274017334}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 15:59:06', 'timestamp': 1715077746.976809}
+{'title': 'Aggregation ends', 'time': '07-05-2024 15:59:07', 'querytime': 0.3295249938964844}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 15:59:07', 'timestamp': 1715077747.3068683}
+{'title': 'python iteration ends', 'time': '07-05-2024 15:59:10', 'iteration time': 3.305159091949463}
+{'title': 'Function ends', 'time': '07-05-2024 15:59:10', 'processing time': 5.120335578918457}
+{'received_at': 1715077745.4856288, 'first': 0.0005304813385009766, 'res': 5.15626859664917}
+{'title': 'function starts', 'time': '07-05-2024 15:59:13', 'timestamp': 1715077753.1894612}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 15:59:13', 'timestamp': 1715077753.189694}
+{'title': 'Aggregation ends', 'time': '07-05-2024 15:59:14', 'querytime': 1.0783638954162598}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 15:59:14', 'timestamp': 1715077754.2680614}
+{'title': 'Aggregation ends', 'time': '07-05-2024 15:59:14', 'querytime': 0.27870821952819824}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 15:59:14', 'timestamp': 1715077754.5470595}
+{'title': 'python iteration ends', 'time': '07-05-2024 15:59:19', 'iteration time': 4.597846031188965}
+{'title': 'Function ends', 'time': '07-05-2024 15:59:19', 'processing time': 5.955447673797607}
+{'received_at': 1715077753.1862392, 'first': 0.0005037784576416016, 'res': 5.989604949951172}
+{'title': 'function starts', 'time': '07-05-2024 15:59:14', 'timestamp': 1715077754.892505}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 15:59:14', 'timestamp': 1715077754.8930833}
+{'title': 'Aggregation ends', 'time': '07-05-2024 15:59:16', 'querytime': 1.5607669353485107}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 15:59:16', 'timestamp': 1715077756.453856}
+{'title': 'Aggregation ends', 'time': '07-05-2024 15:59:16', 'querytime': 0.3395531177520752}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 15:59:16', 'timestamp': 1715077756.7939904}
+{'title': 'python iteration ends', 'time': '07-05-2024 15:59:20', 'iteration time': 3.464142322540283}
+{'title': 'Function ends', 'time': '07-05-2024 15:59:20', 'processing time': 5.365630865097046}
+{'received_at': 1715077754.8834205, 'first': 0.001070261001586914, 'res': 5.404118537902832}
+{'title': 'function starts', 'time': '07-05-2024 16:00:46', 'timestamp': 1715077846.997064}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:00:46', 'timestamp': 1715077846.9973264}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:00:48', 'querytime': 1.103377103805542}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:00:48', 'timestamp': 1715077848.1007068}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:00:48', 'querytime': 0.28630518913269043}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:00:48', 'timestamp': 1715077848.3873549}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:00:52', 'iteration time': 3.832287073135376}
+{'title': 'Function ends', 'time': '07-05-2024 16:00:52', 'processing time': 5.222580671310425}
+{'received_at': 1715077846.9916556, 'first': 0.0004878044128417969, 'res': 5.257960319519043}
+{'title': 'function starts', 'time': '07-05-2024 16:00:49', 'timestamp': 1715077849.7906253}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:00:49', 'timestamp': 1715077849.7911725}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:00:51', 'querytime': 1.5748512744903564}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:00:51', 'timestamp': 1715077851.366027}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:00:51', 'querytime': 0.3408243656158447}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:00:51', 'timestamp': 1715077851.70754}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:00:55', 'iteration time': 4.012594938278198}
+{'title': 'Function ends', 'time': '07-05-2024 16:00:55', 'processing time': 5.9295127391815186}
+{'received_at': 1715077849.7854044, 'first': 0.0005896091461181641, 'res': 5.970173597335815}
+{'title': 'function starts', 'time': '07-05-2024 16:00:53', 'timestamp': 1715077853.5339274}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:00:53', 'timestamp': 1715077853.5344074}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:00:55', 'querytime': 1.597269058227539}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:00:55', 'timestamp': 1715077855.1316798}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:00:55', 'querytime': 0.35460996627807617}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:00:55', 'timestamp': 1715077855.4869905}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:01:00', 'iteration time': 4.711308240890503}
+{'title': 'Function ends', 'time': '07-05-2024 16:01:00', 'processing time': 6.664375066757202}
+{'received_at': 1715077853.5265448, 'first': 0.0005218982696533203, 'res': 6.7083494663238525}
+{'title': 'function starts', 'time': '07-05-2024 16:00:55', 'timestamp': 1715077855.9903808}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:00:55', 'timestamp': 1715077855.9907677}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:00:57', 'querytime': 1.5662188529968262}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:00:57', 'timestamp': 1715077857.55699}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:00:57', 'querytime': 0.36097288131713867}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:00:57', 'timestamp': 1715077857.9186144}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:01:01', 'iteration time': 3.491563320159912}
+{'title': 'Function ends', 'time': '07-05-2024 16:01:01', 'processing time': 5.419800043106079}
+{'received_at': 1715077855.9836152, 'first': 0.0006022453308105469, 'res': 5.458318710327148}
+{'title': 'function starts', 'time': '07-05-2024 16:01:06', 'timestamp': 1715077866.6482944}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:01:06', 'timestamp': 1715077866.6485894}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:01:07', 'querytime': 1.0740270614624023}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:01:07', 'timestamp': 1715077867.7226193}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:01:08', 'querytime': 0.3004882335662842}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:01:08', 'timestamp': 1715077868.0234103}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:01:11', 'iteration time': 3.941352605819702}
+{'title': 'Function ends', 'time': '07-05-2024 16:01:11', 'processing time': 5.316471815109253}
+{'received_at': 1715077866.6440768, 'first': 0.0005373954772949219, 'res': 5.350160360336304}
+{'title': 'function starts', 'time': '07-05-2024 16:01:08', 'timestamp': 1715077868.9626248}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:01:08', 'timestamp': 1715077868.963243}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:01:10', 'querytime': 1.5358569622039795}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:01:10', 'timestamp': 1715077870.4991038}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:01:10', 'querytime': 0.24064970016479492}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:01:10', 'timestamp': 1715077870.7403827}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:01:14', 'iteration time': 3.3055126667022705}
+{'title': 'Function ends', 'time': '07-05-2024 16:01:14', 'processing time': 5.083273410797119}
+{'received_at': 1715077868.9548066, 'first': 0.0007455348968505859, 'res': 5.120821475982666}
+{'title': 'function starts', 'time': '07-05-2024 16:01:18', 'timestamp': 1715077878.0802667}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:01:18', 'timestamp': 1715077878.080544}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:01:19', 'querytime': 1.1061229705810547}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:01:19', 'timestamp': 1715077879.1866698}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:01:19', 'querytime': 0.26010680198669434}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:01:19', 'timestamp': 1715077879.4470692}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:01:22', 'iteration time': 3.3269808292388916}
+{'title': 'Function ends', 'time': '07-05-2024 16:01:22', 'processing time': 4.693786382675171}
+{'received_at': 1715077878.0753257, 'first': 0.0008029937744140625, 'res': 4.7292938232421875}
+{'title': 'function starts', 'time': '07-05-2024 16:01:21', 'timestamp': 1715077881.6694193}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:01:21', 'timestamp': 1715077881.6698434}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:01:23', 'querytime': 1.4001858234405518}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:01:23', 'timestamp': 1715077883.070033}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:01:23', 'querytime': 0.25089216232299805}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:01:23', 'timestamp': 1715077883.3212721}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:01:26', 'iteration time': 3.5700812339782715}
+{'title': 'Function ends', 'time': '07-05-2024 16:01:26', 'processing time': 5.221937417984009}
+{'received_at': 1715077881.662562, 'first': 0.0005321502685546875, 'res': 5.2713751792907715}
+{'title': 'function starts', 'time': '07-05-2024 16:01:25', 'timestamp': 1715077885.0277574}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:01:25', 'timestamp': 1715077885.0284395}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:01:26', 'querytime': 1.5820543766021729}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:01:26', 'timestamp': 1715077886.6104972}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:01:26', 'querytime': 0.3696253299713135}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:01:26', 'timestamp': 1715077886.9805772}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:01:30', 'iteration time': 3.868745803833008}
+{'title': 'Function ends', 'time': '07-05-2024 16:01:30', 'processing time': 5.821568965911865}
+{'received_at': 1715077885.0211995, 'first': 0.0006570816040039062, 'res': 5.8597259521484375}
+{'title': 'function starts', 'time': '07-05-2024 16:01:28', 'timestamp': 1715077888.4416666}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:01:28', 'timestamp': 1715077888.4422247}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:01:29', 'querytime': 1.4998531341552734}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:01:29', 'timestamp': 1715077889.9420812}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:01:30', 'querytime': 0.3260176181793213}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:01:30', 'timestamp': 1715077890.268784}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:01:34', 'iteration time': 4.254642963409424}
+{'title': 'Function ends', 'time': '07-05-2024 16:01:34', 'processing time': 6.081763744354248}
+{'received_at': 1715077888.435074, 'first': 0.0005557537078857422, 'res': 6.117997169494629}
+{'title': 'function starts', 'time': '07-05-2024 16:01:31', 'timestamp': 1715077891.2417827}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:01:31', 'timestamp': 1715077891.2421827}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:01:32', 'querytime': 1.5052757263183594}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:01:32', 'timestamp': 1715077892.7474618}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:01:33', 'querytime': 0.329118013381958}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:01:33', 'timestamp': 1715077893.0771172}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:01:37', 'iteration time': 4.396215438842773}
+{'title': 'Function ends', 'time': '07-05-2024 16:01:37', 'processing time': 6.231552839279175}
+{'received_at': 1715077891.23557, 'first': 0.0007274150848388672, 'res': 6.267318487167358}
+{'title': 'function starts', 'time': '07-05-2024 16:01:34', 'timestamp': 1715077894.7182782}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:01:34', 'timestamp': 1715077894.7185974}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:01:36', 'querytime': 1.4984407424926758}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:01:36', 'timestamp': 1715077896.2170415}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:01:36', 'querytime': 0.327343225479126}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:01:36', 'timestamp': 1715077896.544898}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:01:39', 'iteration time': 2.858696222305298}
+{'title': 'Function ends', 'time': '07-05-2024 16:01:39', 'processing time': 4.685319185256958}
+{'received_at': 1715077894.710902, 'first': 0.0006694793701171875, 'res': 4.723006725311279}
+{'title': 'function starts', 'time': '07-05-2024 16:01:56', 'timestamp': 1715077916.747965}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:01:56', 'timestamp': 1715077916.7481735}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:01:57', 'querytime': 1.1190502643585205}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:01:57', 'timestamp': 1715077917.867227}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:01:58', 'querytime': 0.2811141014099121}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:01:58', 'timestamp': 1715077918.1486785}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:02:00', 'iteration time': 2.461320400238037}
+{'title': 'Function ends', 'time': '07-05-2024 16:02:00', 'processing time': 3.8620364665985107}
+{'received_at': 1715077916.7442985, 'first': 0.0006384849548339844, 'res': 3.897033214569092}
+{'title': 'function starts', 'time': '07-05-2024 16:03:20', 'timestamp': 1715078000.8604274}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:03:20', 'timestamp': 1715078000.8606443}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:03:21', 'querytime': 1.1000020503997803}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:03:21', 'timestamp': 1715078001.960652}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:03:22', 'querytime': 0.3020913600921631}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:03:22', 'timestamp': 1715078002.2630103}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:03:26', 'iteration time': 3.9781954288482666}
+{'title': 'Function ends', 'time': '07-05-2024 16:03:26', 'processing time': 5.380781412124634}
+{'received_at': 1715078000.8570125, 'first': 0.0005409717559814453, 'res': 5.414549112319946}
+{'title': 'function starts', 'time': '07-05-2024 16:03:23', 'timestamp': 1715078003.0931053}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:03:23', 'timestamp': 1715078003.093602}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:03:24', 'querytime': 1.4785428047180176}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:03:24', 'timestamp': 1715078004.5721483}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:03:24', 'querytime': 0.33979249000549316}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:03:24', 'timestamp': 1715078004.9125695}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:03:29', 'iteration time': 4.234294176101685}
+{'title': 'Function ends', 'time': '07-05-2024 16:03:29', 'processing time': 6.053761959075928}
+{'received_at': 1715078003.0870402, 'first': 0.0007102489471435547, 'res': 6.092653274536133}
+{'title': 'function starts', 'time': '07-05-2024 16:03:27', 'timestamp': 1715078007.0432546}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:03:27', 'timestamp': 1715078007.0438344}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:03:28', 'querytime': 1.5399000644683838}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:03:28', 'timestamp': 1715078008.5837379}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:03:28', 'querytime': 0.3614766597747803}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:03:28', 'timestamp': 1715078008.946215}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:03:33', 'iteration time': 4.0761940479278564}
+{'title': 'Function ends', 'time': '07-05-2024 16:03:33', 'processing time': 5.979157447814941}
+{'received_at': 1715078007.038167, 'first': 0.00067138671875, 'res': 6.0172624588012695}
+{'title': 'function starts', 'time': '07-05-2024 16:03:30', 'timestamp': 1715078010.8188698}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:03:30', 'timestamp': 1715078010.819469}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:03:32', 'querytime': 1.9389138221740723}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:03:32', 'timestamp': 1715078012.7583869}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:03:33', 'querytime': 0.41828107833862305}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:03:33', 'timestamp': 1715078013.1780155}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:03:37', 'iteration time': 4.379221677780151}
+{'title': 'Function ends', 'time': '07-05-2024 16:03:37', 'processing time': 6.738370180130005}
+{'received_at': 1715078010.809917, 'first': 0.0008397102355957031, 'res': 6.7788004875183105}
+{'title': 'function starts', 'time': '07-05-2024 16:03:31', 'timestamp': 1715078011.6101255}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:03:31', 'timestamp': 1715078011.6125312}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:03:34', 'querytime': 2.468675374984741}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:03:34', 'timestamp': 1715078014.0812268}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:03:34', 'querytime': 0.22759270668029785}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:03:34', 'timestamp': 1715078014.3093514}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:03:38', 'iteration time': 3.7240986824035645}
+{'title': 'Function ends', 'time': '07-05-2024 16:03:38', 'processing time': 6.423327922821045}
+{'received_at': 1715078011.5960238, 'first': 0.0005686283111572266, 'res': 6.468631029129028}
+{'title': 'function starts', 'time': '07-05-2024 16:04:06', 'timestamp': 1715078046.794795}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:04:06', 'timestamp': 1715078046.7949815}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:04:07', 'querytime': 1.0758421421051025}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:04:07', 'timestamp': 1715078047.870827}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:04:08', 'querytime': 0.22110795974731445}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:04:08', 'timestamp': 1715078048.0922973}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:04:10', 'iteration time': 2.5419740676879883}
+{'title': 'Function ends', 'time': '07-05-2024 16:04:10', 'processing time': 3.8394792079925537}
+{'received_at': 1715078046.7909613, 'first': 0.0004925727844238281, 'res': 3.8750298023223877}
+{'title': 'function starts', 'time': '07-05-2024 16:04:31', 'timestamp': 1715078071.3553438}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:04:31', 'timestamp': 1715078071.3555896}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:04:32', 'querytime': 1.1245553493499756}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:04:32', 'timestamp': 1715078072.4801488}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:04:32', 'querytime': 0.26024699211120605}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:04:32', 'timestamp': 1715078072.7406967}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:04:35', 'iteration time': 2.6082005500793457}
+{'title': 'Function ends', 'time': '07-05-2024 16:04:35', 'processing time': 3.9935567378997803}
+{'received_at': 1715078071.3513706, 'first': 0.0004773139953613281, 'res': 4.029013633728027}
+{'title': 'function starts', 'time': '07-05-2024 16:04:44', 'timestamp': 1715078084.1457574}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:04:44', 'timestamp': 1715078084.146021}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:04:45', 'querytime': 1.0955793857574463}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:04:45', 'timestamp': 1715078085.2416039}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:04:45', 'querytime': 0.25864481925964355}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:04:45', 'timestamp': 1715078085.5005858}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:04:48', 'iteration time': 2.5140860080718994}
+{'title': 'Function ends', 'time': '07-05-2024 16:04:48', 'processing time': 3.868917226791382}
+{'received_at': 1715078084.1421509, 'first': 0.0005252361297607422, 'res': 3.903569459915161}
+{'title': 'function starts', 'time': '07-05-2024 16:05:21', 'timestamp': 1715078121.3302808}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:05:21', 'timestamp': 1715078121.330508}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:05:22', 'querytime': 1.0401723384857178}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:05:22', 'timestamp': 1715078122.3706925}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:05:22', 'querytime': 0.26210761070251465}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:05:22', 'timestamp': 1715078122.6331444}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:05:26', 'iteration time': 3.892928123474121}
+{'title': 'Function ends', 'time': '07-05-2024 16:05:26', 'processing time': 5.1957948207855225}
+{'received_at': 1715078121.326086, 'first': 0.0005810260772705078, 'res': 5.23039174079895}
+{'title': 'function starts', 'time': '07-05-2024 16:05:23', 'timestamp': 1715078123.857489}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:05:23', 'timestamp': 1715078123.8580043}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:05:25', 'querytime': 1.5974209308624268}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:05:25', 'timestamp': 1715078125.4554286}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:05:25', 'querytime': 0.33861541748046875}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:05:25', 'timestamp': 1715078125.7945771}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:05:28', 'iteration time': 3.082977771759033}
+{'title': 'Function ends', 'time': '07-05-2024 16:05:28', 'processing time': 5.020068883895874}
+{'received_at': 1715078123.8510175, 'first': 0.0005545616149902344, 'res': 5.057955741882324}
+{'title': 'function starts', 'time': '07-05-2024 16:05:36', 'timestamp': 1715078136.394656}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:05:36', 'timestamp': 1715078136.3948627}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:05:37', 'querytime': 1.0843162536621094}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:05:37', 'timestamp': 1715078137.4791825}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:05:37', 'querytime': 0.2879338264465332}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:05:37', 'timestamp': 1715078137.7674406}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:05:41', 'iteration time': 3.6920719146728516}
+{'title': 'Function ends', 'time': '07-05-2024 16:05:41', 'processing time': 5.064859628677368}
+{'received_at': 1715078136.3903315, 'first': 0.0005738735198974609, 'res': 5.101685047149658}
+{'title': 'function starts', 'time': '07-05-2024 16:05:39', 'timestamp': 1715078139.2643528}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:05:39', 'timestamp': 1715078139.2649376}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:05:40', 'querytime': 1.4878573417663574}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:05:40', 'timestamp': 1715078140.7527986}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:05:41', 'querytime': 0.32645344734191895}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:05:41', 'timestamp': 1715078141.0799198}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:05:43', 'iteration time': 2.7770798206329346}
+{'title': 'Function ends', 'time': '07-05-2024 16:05:43', 'processing time': 4.592649698257446}
+{'received_at': 1715078139.257727, 'first': 0.0005433559417724609, 'res': 4.631791353225708}
+{'title': 'function starts', 'time': '07-05-2024 16:05:43', 'timestamp': 1715078143.8309531}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:05:43', 'timestamp': 1715078143.8316555}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:05:44', 'querytime': 1.153991460800171}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:05:44', 'timestamp': 1715078144.9856505}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:05:45', 'querytime': 0.3051936626434326}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:05:45', 'timestamp': 1715078145.291126}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:05:47', 'iteration time': 2.6000282764434814}
+{'title': 'Function ends', 'time': '07-05-2024 16:05:47', 'processing time': 4.060204029083252}
+{'received_at': 1715078143.825135, 'first': 0.0006933212280273438, 'res': 4.101066827774048}
+{'title': 'function starts', 'time': '07-05-2024 16:05:53', 'timestamp': 1715078153.0792503}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:05:53', 'timestamp': 1715078153.0794873}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:05:54', 'querytime': 1.083665132522583}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:05:54', 'timestamp': 1715078154.1631558}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:05:54', 'querytime': 0.30274319648742676}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:05:54', 'timestamp': 1715078154.4663436}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:05:57', 'iteration time': 2.651085138320923}
+{'title': 'Function ends', 'time': '07-05-2024 16:05:57', 'processing time': 4.03818154335022}
+{'received_at': 1715078153.075849, 'first': 0.0005087852478027344, 'res': 4.0756964683532715}
+{'title': 'function starts', 'time': '07-05-2024 16:14:20', 'timestamp': 1715078660.957264}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:14:20', 'timestamp': 1715078660.9574769}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:14:22', 'querytime': 1.0712471008300781}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:14:22', 'timestamp': 1715078662.0287297}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:14:22', 'querytime': 0.22473740577697754}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:14:22', 'timestamp': 1715078662.253788}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:14:24', 'iteration time': 2.6423449516296387}
+{'title': 'Function ends', 'time': '07-05-2024 16:14:24', 'processing time': 3.9388720989227295}
+{'received_at': 1715078660.9532826, 'first': 0.0004956722259521484, 'res': 3.972698450088501}
+{'title': 'function starts', 'time': '07-05-2024 16:20:32', 'timestamp': 1715079032.1655765}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:20:32', 'timestamp': 1715079032.1657908}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:20:33', 'querytime': 1.1138134002685547}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:20:33', 'timestamp': 1715079033.2796073}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:20:33', 'querytime': 0.23672270774841309}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:20:33', 'timestamp': 1715079033.516631}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:20:36', 'iteration time': 2.6807944774627686}
+{'title': 'Function ends', 'time': '07-05-2024 16:20:36', 'processing time': 4.0318520069122314}
+{'received_at': 1715079032.161219, 'first': 0.0006883144378662109, 'res': 4.066025733947754}
+{'title': 'function starts', 'time': '07-05-2024 16:22:02', 'timestamp': 1715079122.6443815}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:22:02', 'timestamp': 1715079122.644664}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:22:03', 'querytime': 1.1980438232421875}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:22:03', 'timestamp': 1715079123.8427126}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:22:04', 'querytime': 0.24759721755981445}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:22:04', 'timestamp': 1715079124.0905921}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:22:06', 'iteration time': 2.7823824882507324}
+{'title': 'Function ends', 'time': '07-05-2024 16:22:06', 'processing time': 4.228596448898315}
+{'received_at': 1715079122.6409032, 'first': 0.0005729198455810547, 'res': 4.264093637466431}
+{'title': 'function starts', 'time': '07-05-2024 16:22:35', 'timestamp': 1715079155.050984}
+{'title': 'Aggregation for cda profile starts', 'time': '07-05-2024 16:22:35', 'timestamp': 1715079155.05124}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:22:36', 'querytime': 1.1031458377838135}
+{'title': 'Aggregation for contacts starts', 'time': '07-05-2024 16:22:36', 'timestamp': 1715079156.1543896}
+{'title': 'Aggregation ends', 'time': '07-05-2024 16:22:36', 'querytime': 0.2849550247192383}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '07-05-2024 16:22:36', 'timestamp': 1715079156.439637}
+{'title': 'python iteration ends', 'time': '07-05-2024 16:22:39', 'iteration time': 2.613163471221924}
+{'title': 'Function ends', 'time': '07-05-2024 16:22:39', 'processing time': 4.001821279525757}
+{'received_at': 1715079155.0468163, 'first': 0.0006430149078369141, 'res': 4.037132024765015}
+nodata
+{'received_at': 1715159024.2699516, 'first': 0.000518798828125, 'res': 0.014988422393798828}
+nodata
+{'received_at': 1715159048.8738966, 'first': 0.0005972385406494141, 'res': 0.015135526657104492}
+nodata
+{'received_at': 1715159068.8677628, 'first': 0.000579833984375, 'res': 0.005193948745727539}
+{'title': 'function starts', 'time': '08-05-2024 14:35:22', 'timestamp': 1715159122.9050486}
+{'title': 'Aggregation for cda profile starts', 'time': '08-05-2024 14:35:22', 'timestamp': 1715159122.9053245}
+{'title': 'Aggregation ends', 'time': '08-05-2024 14:35:22', 'querytime': 0.009743928909301758}
+{'title': 'Aggregation for contacts starts', 'time': '08-05-2024 14:35:22', 'timestamp': 1715159122.915072}
+{'title': 'Aggregation ends', 'time': '08-05-2024 14:35:22', 'querytime': 0.001764059066772461}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '08-05-2024 14:35:22', 'timestamp': 1715159122.9172375}
+{'title': 'python iteration ends', 'time': '08-05-2024 14:35:22', 'iteration time': 0.012306928634643555}
+{'title': 'Function ends', 'time': '08-05-2024 14:35:22', 'processing time': 0.024499177932739258}
+{'received_at': 1715159122.8996708, 'first': 0.0008318424224853516, 'res': 0.02990436553955078}
+{'title': 'function starts', 'time': '08-05-2024 14:35:52', 'timestamp': 1715159152.485933}
+{'title': 'Aggregation for cda profile starts', 'time': '08-05-2024 14:35:52', 'timestamp': 1715159152.4863248}
+{'title': 'Aggregation ends', 'time': '08-05-2024 14:35:52', 'querytime': 0.00650334358215332}
+{'title': 'Aggregation for contacts starts', 'time': '08-05-2024 14:35:52', 'timestamp': 1715159152.4928317}
+{'title': 'Aggregation ends', 'time': '08-05-2024 14:35:52', 'querytime': 0.0026254653930664062}
+{'title': 'Python iteration ends 3 mongo queries included', 'time': '08-05-2024 14:35:52', 'timestamp': 1715159152.4957945}
+{'title': 'python iteration ends', 'time': '08-05-2024 14:35:52', 'iteration time': 0.009234189987182617}
+{'title': 'Function ends', 'time': '08-05-2024 14:35:52', 'processing time': 0.019098520278930664}
+{'received_at': 1715159152.4807749, 'first': 0.0005931854248046875, 'res': 0.0242769718170166}
+nodata
+{'received_at': 1715322132.5750575, 'first': 0.0006439685821533203, 'res': 0.026224613189697266}
