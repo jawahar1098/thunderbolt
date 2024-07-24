@@ -45,10 +45,16 @@ pipeline {
             steps {
                 // Frontend deployment steps (npm install)
                 dir('front_app') {
-                    // Ensure npm is installed
+                    // Reset PATH to include system npm and node
+                    script {
+                        env.PATH = "/usr/local/bin:$env.PATH"
+                    }
+
+                    // Ensure npm is installed (assuming it's not in the virtual environment)
                     script {
                         def npmInstalled = sh(script: 'which npm', returnStatus: true)
                         if (npmInstalled != 0) {
+                            // Install npm if not found
                             sh 'sudo apt-get update && sudo apt-get install -y npm'
                         }
                     }
