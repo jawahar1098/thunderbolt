@@ -42,24 +42,16 @@ pipeline {
             agent {
                 label 'slavenode1' // Replace with your slave node label
             }
-            environment {
-                // Define an environment variable to hold Node.js installation path
-                NODEJS_HOME = tool name: 'NodeJS', type: 'jenkins.plugins.nodejs.tools.NodeJSInstallation'
-            }
             steps {
                 // Frontend deployment steps (npm install)
                 dir('front_app') {
-                    // Ensure npm is installed (if not already installed globally)
+                    // Ensure npm is installed
                     script {
                         def npmInstalled = sh(script: 'which npm', returnStatus: true)
                         if (npmInstalled != 0) {
-                            // Optionally install npm if not already installed globally
                             sh 'sudo apt-get update && sudo apt-get install -y npm'
                         }
                     }
-
-                    // Set PATH to include Node.js binaries
-                    env.PATH = "${env.NODEJS_HOME}/bin:${env.PATH}"
 
                     // Install npm dependencies
                     sh 'npm install'
