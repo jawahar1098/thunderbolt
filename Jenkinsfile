@@ -68,7 +68,7 @@ pipeline {
 
                     // Start frontend development server using specified Node.js version
                     script {
-                        sh "NODE_PATH=${NODE_PATH} NODE_ENV=production npm run dev &"
+                    sh 'npm run dev &'
                     }
                 }
             }
