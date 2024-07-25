@@ -38,7 +38,7 @@ pipeline {
             }
         }
 
-                stage('Frontend Deployment on Slave') {
+        stage('Frontend Deployment on Slave') {
             agent {
                 label 'slavenode1' // Replace with your slave node label
             }
@@ -68,11 +68,49 @@ pipeline {
 
                     // Start frontend development server using specified Node.js version
                     script {
-                    sh 'npm run dev &'
+                        sh 'npm run dev &'
                     }
                 }
             }
         }
+    }
 
+    post {
+        success {
+            script {
+                // Send Slack notification on successful build
+                def slackMessage = [
+                    'text': "Pipeline build successful for ${currentBuild.fullDisplayName}",
+                    'channel': 'C07DZ7HG0SX',
+                    //'username': 'Jenkins',
+                    'attachments': [
+                        [
+                            'color': 'good',
+                            'text': "Build number: ${currentBuild.number}"
+                        ]
+                    ]
+                ]
+                // Replace 'YOUR_WEBHOOK_URL' with your actual Slack webhook URL
+                sh "curl -X POST -H 'Content-type: application/json' --data '${new groovy.json.JsonBuilder(slackMessage)}' https://hooks.slack.com/services/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"
+            }
+        }
+        failure {
+            script {
+                // Send Slack notification on failed build
+                def slackMessage = [
+                    'text': "Pipeline build failed for ${currentBuild.fullDisplayName}",
+                    'channel': 'C07DZ7HG0SX',
+                    //'username': 'Jenkins',
+                    'attachments': [
+                        [
+                            'color': 'danger',
+                            'text': "Build number: ${currentBuild.number}"
+                        ]
+                    ]
+                ]
+                // Replace 'YOUR_WEBHOOK_URL' with your actual Slack webhook URL
+                sh "curl -X POST -H 'Content-type: application/json' --data '${new groovy.json.JsonBuilder(slackMessage)}' https://hooks.slack.com/services/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"
+            }
+        }
     }
 }
