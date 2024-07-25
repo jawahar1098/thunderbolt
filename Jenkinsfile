@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    environment {
+        SLACK_WEBHOOK_URL = credentials('slack-webhook-url') // Jenkins credentials ID for your Slack webhook URL
+    }
+
     stages {
         stage('Clone repository') {
             steps {
@@ -38,10 +42,10 @@ pipeline {
             }
             post {
                 success {
-                    slackSend color: 'good', message: "Backend deployment succeeded"
+                    slackSend color: 'good', message: "Backend deployment succeeded", webhookUrl: env.SLACK_WEBHOOK_URL
                 }
                 failure {
-                    slackSend color: 'danger', message: "Backend deployment failed"
+                    slackSend color: 'danger', message: "Backend deployment failed", webhookUrl: env.SLACK_WEBHOOK_URL
                 }
             }
         }
@@ -82,14 +86,13 @@ pipeline {
             }
             post {
                 success {
-                    slackSend color: 'good', message: "Frontend deployment succeeded"
+                    slackSend color: 'good', message: "Frontend deployment succeeded", webhookUrl: env.SLACK_WEBHOOK_URL
                 }
                 failure {
-                    slackSend color: 'danger', message: "Frontend deployment failed"
+                    slackSend color: 'danger', message: "Frontend deployment failed", webhookUrl: env.SLACK_WEBHOOK_URL
                 }
             }
         }
 
     }
 }
-
