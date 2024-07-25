@@ -42,10 +42,10 @@ pipeline {
             }
             post {
                 success {
-                    slackSend color: 'good', message: "Backend deployment succeeded", webhookUrl: env.SLACK_WEBHOOK_URL
+                    slackSend color: 'good', message: "Backend deployment succeeded", baseUrl: env.SLACK_WEBHOOK_URL
                 }
                 failure {
-                    slackSend color: 'danger', message: "Backend deployment failed", webhookUrl: env.SLACK_WEBHOOK_URL
+                    slackSend color: 'danger', message: "Backend deployment failed", baseUrl: env.SLACK_WEBHOOK_URL
                 }
             }
         }
@@ -86,10 +86,10 @@ pipeline {
             }
             post {
                 success {
-                    slackSend color: 'good', message: "Frontend deployment succeeded", webhookUrl: env.SLACK_WEBHOOK_URL
+                    slackSend color: 'good', message: "Frontend deployment succeeded", baseUrl: env.SLACK_WEBHOOK_URL
                 }
                 failure {
-                    slackSend color: 'danger', message: "Frontend deployment failed", webhookUrl: env.SLACK_WEBHOOK_URL
+                    slackSend color: 'danger', message: "Frontend deployment failed", baseUrl: env.SLACK_WEBHOOK_URL
                 }
             }
         }
