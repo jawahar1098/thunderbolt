@@ -74,41 +74,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        success {
-            script {
-                def slackMessage = """
-                    {
-                        "text": "Pipeline build successful for ${currentBuild.fullDisplayName}",
-                        "attachments": [
-                            {
-                                "color": "good",
-                                "text": "Build number: ${currentBuild.number}"
-                            }
-                        ]
-                    }
-                """
-                // Replace 'YOUR_WEBHOOK_URL' with your actual Slack webhook URL
-                httpRequest contentType: 'APPLICATION_JSON', url: 'https://hooks.slack.com/services/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', requestBody: slackMessage
-            }
-        }
-        failure {
-            script {
-                def slackMessage = """
-                    {
-                        "text": "Pipeline build failed for ${currentBuild.fullDisplayName}",
-                        "attachments": [
-                            {
-                                "color": "danger",
-                                "text": "Build number: ${currentBuild.number}"
-                            }
-                        ]
-                    }
-                """
-                // Replace 'YOUR_WEBHOOK_URL' with your actual Slack webhook URL
-                httpRequest contentType: 'APPLICATION_JSON', url: 'https://hooks.slack.com/services/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', requestBody: slackMessage
-            }
-        }
-    }
 }
