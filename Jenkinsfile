@@ -36,9 +36,17 @@ pipeline {
                     sh 'python3 wsgi.py &'
                 }
             }
+            post {
+                success {
+                    slackSend color: 'good', message: "Backend deployment succeeded"
+                }
+                failure {
+                    slackSend color: 'danger', message: "Backend deployment failed"
+                }
+            }
         }
 
-                stage('Frontend Deployment on Slave') {
+        stage('Frontend Deployment on Slave') {
             agent {
                 label 'slavenode1' // Replace with your slave node label
             }
@@ -68,11 +76,20 @@ pipeline {
 
                     // Start frontend development server using specified Node.js version
                     script {
-                    sh 'npm run dev &'
+                        sh 'npm run dev &'
                     }
+                }
+            }
+            post {
+                success {
+                    slackSend color: 'good', message: "Frontend deployment succeeded"
+                }
+                failure {
+                    slackSend color: 'danger', message: "Frontend deployment failed"
                 }
             }
         }
 
     }
 }
+
