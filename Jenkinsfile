@@ -14,9 +14,9 @@ pipeline {
                 // Run initial setup commands
                 script {
                     // Change ownership and permissions after cloning
-                    sh 'sudo chown -R node1:node1 /home/node1/workspace/pipeline/front_app'
-                    sh 'sudo chmod -R u+w /home/node1/workspace/pipeline/front_app'
-                    sh 'sudo chmod 777 /home/node1/workspace/pipeline/backend/file_log.log'
+                    sh 'chown -R node1:node1 /home/node1/workspace/pipeline/front_app'
+                    //sh 'sudo chmod -R u+w /home/node1/workspace/pipeline/front_app'
+                    //sh 'sudo chmod 777 /home/node1/workspace/pipeline/backend/file_log.log'
                 }
             }
         }
