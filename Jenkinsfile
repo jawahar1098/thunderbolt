@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        SLACK_WEBHOOK_URL = credentials('slack-webhook-url') // Jenkins credentials ID for your Slack webhook URL
+        SLACK_WEBHOOK_URL = 'https://hooks.slack.com/services/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' // Your Slack webhook URL
     }
 
     stages {
