@@ -1,23 +1,10 @@
 pipeline {
     agent any
 
-    environment {
-        SLACK_WEBHOOK_URL = 'https://hooks.slack.com/services/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' // Your Slack webhook URL
-    }
-
     stages {
         stage('Clone repository') {
             steps {
-                // Clone repository and perform initial setup
                 git 'https://github.com/jawahar1098/thunderbolt.git'
-
-                // Run initial setup commands
-                script {
-                    // Change ownership and permissions after cloning
-                    sh 'chown -R node1:node1 /home/node1/workspace/pipeline/front_app'
-                    //sh 'sudo chmod -R u+w /home/node1/workspace/pipeline/front_app'
-                    //sh 'sudo chmod 777 /home/node1/workspace/pipeline/backend/file_log.log'
-                }
             }
         }
 
@@ -49,17 +36,9 @@ pipeline {
                     sh 'python3 wsgi.py &'
                 }
             }
-            post {
-                success {
-                    slackSend color: 'good', message: "Backend deployment succeeded", baseUrl: env.SLACK_WEBHOOK_URL
-                }
-                failure {
-                    slackSend color: 'danger', message: "Backend deployment failed", baseUrl: env.SLACK_WEBHOOK_URL
-                }
-            }
         }
 
-        stage('Frontend Deployment on Slave') {
+                stage('Frontend Deployment on Slave') {
             agent {
                 label 'slavenode1' // Replace with your slave node label
             }
@@ -89,16 +68,8 @@ pipeline {
 
                     // Start frontend development server using specified Node.js version
                     script {
-                        sh 'npm run dev &'
+                    sh 'npm run dev &'
                     }
-                }
-            }
-            post {
-                success {
-                    slackSend color: 'good', message: "Frontend deployment succeeded", baseUrl: env.SLACK_WEBHOOK_URL
-                }
-                failure {
-                    slackSend color: 'danger', message: "Frontend deployment failed", baseUrl: env.SLACK_WEBHOOK_URL
                 }
             }
         }
