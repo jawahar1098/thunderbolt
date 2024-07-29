@@ -16,7 +16,7 @@ RUN pip install --upgrade pip && \
 COPY wsgi.py /app
 
 # PORT
-EXPOSE 5005
+EXPOSE 5006
 
 #RUN pip install gunicorn
 

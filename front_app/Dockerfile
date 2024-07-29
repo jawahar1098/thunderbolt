@@ -15,7 +15,7 @@ COPY . /app
 RUN npm install --legacy-peer-deps
 
 #running on port 3000
-EXPOSE 3000
+EXPOSE 3001
 
 #executing the below command after the container started.
 CMD ["npm", "run", "dev"]

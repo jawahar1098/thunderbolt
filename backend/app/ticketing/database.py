@@ -12,7 +12,7 @@ DB1_NAME = 'THUNDERBOLT'
 DB1_ALIAS = 'default_2'
 
 
-connect(DB1_NAME, host='mongodb://mongo-cdat:27017', alias=DB1_ALIAS)
+connect(DB1_NAME, host='mongodb://mymongo:27017', alias=DB1_ALIAS)
 # connect(DB1_NAME, host='mongodb://localhost:27017', alias=DB1_ALIAS)
 
 

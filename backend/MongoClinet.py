@@ -5,7 +5,7 @@ from pprint import pprint
 from mongoengine import connect                                                                             
 
 
-client = MongoClient('mongodb://localhost:27017')
+client = MongoClient('mongodb://mymongo:27017')
 # client = MongoClient('mongodb://10.50.50.230:27017')
 # client = MongoClient('mongodb://mongo-cdat:27017')
 

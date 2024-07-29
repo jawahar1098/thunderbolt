@@ -10,7 +10,7 @@ from mongoengine import Document, StringField, DateTimeField, ReferenceField, Li
 from datetime import datetime
 
 # db = MongoEngine()
-connect('NexusData',host='mongodb://localhost:27017/')
+connect('NexusData',host='mongodb://mymongo:27017/')
 # connect('NexusData',host='mongodb://mongo-cdat:27017/')
 
 
