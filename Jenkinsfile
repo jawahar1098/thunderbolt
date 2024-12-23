@@ -2,8 +2,7 @@ pipeline {
     agent any
 
     environment {
-        GIT_REPO_URL = 'https://github.com/jawahar1098/thunderbolt.git'
-        #GIT_CREDENTIALS_ID = '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' // Replace with your actual GitHub credentials ID
+        GIT_REPO_URL = 'https://github.com/jawahar1098/thunderbolt.git' // Replace with your actual GitHub credentials ID
     }
 
     stages {
