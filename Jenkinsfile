@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        SLACK_CHANNEL = 'jenkins' // Replace with your Slack channel
-        SLACK_CREDENTIALS_ID = '8dgg3XNduLJGAkDODdeuZMQN' // The ID of the Jenkins credentials storing the token
+        ROCKET_CHAT_CHANNEL_URL = 'http://13.235.80.174:3000/hooks/6769320793fa2051167e9dfd/GMcqTJLCdZGThQrepJHpde9WxtMFyN2n8e24pM76vwmB2KNp' // Replace with your Rocket.Chat incoming webhook URL
+        ROCKET_CHAT_TOKEN = '6769320793fa2051167e9dfd/GMcqTJLCdZGThQrepJHpde9WxtMFyN2n8e24pM76vwmB2KNp' // Your Rocket.Chat token for authentication
         GIT_REPO_URL = 'https://github.com/jawahar1098/thunderbolt.git'
     }
 
@@ -13,14 +13,14 @@ pipeline {
                 git GIT_REPO_URL
                 script {
                     def gitCommit = sh(script: 'git rev-parse --short HEAD', returnStdout: true).trim()
-                    slackSend(channel: SLACK_CHANNEL, message: "Git repository cloned. Commit: ${gitCommit}")
+                    rocketChatSend(message: "Git repository cloned. Commit: ${gitCommit}")
                 }
             }
         }
 
-        stage('Backend Deployment on Slave') {
+        stage('Backend Deployment on Node-1') {
             agent {
-                label 'slavenode1' // Replace with your slave node label
+                label 'Node-1' // Replace with your Node-1 label
             }
             steps {
                 dir('backend') {
@@ -54,9 +54,9 @@ pipeline {
                     script {
                         try {
                             sh 'sudo docker ps'
-                            slackSend(channel: SLACK_CHANNEL, message: "Backend deployment successful")
+                            rocketChatSend(message: "Backend deployment successful on Node-1")
                         } catch (Exception e) {
-                            slackSend(channel: SLACK_CHANNEL, message: "Backend deployment failed: ${e}")
+                            rocketChatSend(message: "Backend deployment failed on Node-1: ${e}")
                             throw e
                         }
                     }
@@ -64,9 +64,9 @@ pipeline {
             }
         }
 
-        stage('Frontend Deployment on Slave') {
+        stage('Frontend Deployment on Node-1') {
             agent {
-                label 'slavenode1' // Replace with your slave node label
+                label 'Node-1' // Replace with your Node-1 label
             }
             steps {
                 dir('front_app') {
@@ -80,9 +80,9 @@ pipeline {
                     script {
                         try {
                             sh 'sudo docker ps'
-                            slackSend(channel: SLACK_CHANNEL, message: "Frontend deployment successful")
+                            rocketChatSend(message: "Frontend deployment successful on Node-1")
                         } catch (Exception e) {
-                            slackSend(channel: SLACK_CHANNEL, message: "Frontend deployment failed: ${e}")
+                            rocketChatSend(message: "Frontend deployment failed on Node-1: ${e}")
                             throw e
                         }
                     }
@@ -95,14 +95,29 @@ pipeline {
         always {
             script {
                 def serverStatus = sh(script: 'curl -Is http://localhost:8000 | head -n 1', returnStdout: true).trim()
-                slackSend(channel: SLACK_CHANNEL, message: "Deployment finished. Server status: ${serverStatus}")
+                rocketChatSend(message: "Deployment finished on Node-1. Server status: ${serverStatus}")
             }
         }
         success {
-            slackSend(channel: SLACK_CHANNEL, message: "Deployment successful")
+            rocketChatSend(message: "Deployment successful on Node-1")
         }
         failure {
-            slackSend(channel: SLACK_CHANNEL, message: "Deployment failed")
+            rocketChatSend(message: "Deployment failed on Node-1")
         }
     }
+}
+
+def rocketChatSend(message) {
+    def response = httpRequest(
+        url: ROCKET_CHAT_CHANNEL_URL,
+        httpMode: 'POST',
+        contentType: 'APPLICATION_JSON',
+        requestBody: """
+        {
+            "text": "${message}",
+            "token": "${ROCKET_CHAT_TOKEN}"
+        }
+        """
+    )
+    echo "Rocket.Chat response: ${response}"
 }
