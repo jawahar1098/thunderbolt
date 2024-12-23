@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        GIT_REPO_URL = 'https://github.com/jawahar1098/thunderbolt.git' // Replace with your actual GitHub credentials ID
+        GIT_REPO_URL = 'https://github.com/jawahar1098/thunderbolt.git' // GitHub repository URL
     }
 
     stages {
@@ -22,11 +22,8 @@ pipeline {
 
         stage('Clone repository') {
             steps {
-                // Clone the repository using GitHub credentials
-                git(
-                    url: GIT_REPO_URL,
-                    credentialsId: GIT_CREDENTIALS_ID // GitHub PAT credentials
-                )
+                // Clone the repository directly from GitHub without credentials
+                git url: GIT_REPO_URL
                 script {
                     // Get the short commit hash
                     def gitCommit = sh(script: 'git rev-parse --short HEAD', returnStdout: true).trim()
