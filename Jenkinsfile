@@ -2,7 +2,6 @@ pipeline {
     agent any
 
     environment {
-        ROCKET_CHAT_CHANNEL_URL = 'http://13.235.80.174:3000/hooks/6769320793fa2051167e9dfd/GMcqTJLCdZGThQrepJHpde9WxtMFyN2n8e24pM76vwmB2KNp'
         GIT_REPO_URL = 'https://github.com/jawahar1098/thunderbolt.git'
         GIT_CREDENTIALS_ID = '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' // Replace with your actual GitHub credentials ID
     }
@@ -18,7 +17,7 @@ pipeline {
                 script {
                     // Get the short commit hash
                     def gitCommit = sh(script: 'git rev-parse --short HEAD', returnStdout: true).trim()
-                    rocketChatSend("Git repository cloned. Commit: ${gitCommit}")
+                    echo "Git repository cloned. Commit: ${gitCommit}"
                 }
             }
         }
@@ -41,7 +40,7 @@ pipeline {
                     }
                 }
                 script {
-                    rocketChatSend("Backend deployment successful on Node-1")
+                    echo "Backend deployment successful on Node-1"
                 }
             }
         }
@@ -59,7 +58,7 @@ pipeline {
                     }
                 }
                 script {
-                    rocketChatSend("Frontend deployment successful on Node-1")
+                    echo "Frontend deployment successful on Node-1"
                 }
             }
         }
@@ -69,38 +68,19 @@ pipeline {
         always {
             script {
                 try {
-                    // Check server status and send message to Rocket.Chat
+                    // Check server status
                     def serverStatus = sh(script: 'curl -Is http://localhost:8000 | head -n 1', returnStdout: true).trim()
-                    rocketChatSend("Deployment finished. Server status: ${serverStatus}")
+                    echo "Deployment finished. Server status: ${serverStatus}"
                 } catch (Exception e) {
-                    rocketChatSend("Failed to retrieve server status: ${e.message}")
+                    echo "Failed to retrieve server status: ${e.message}"
                 }
             }
         }
         success {
-            rocketChatSend("Deployment successful on Node-1")
+            echo "Deployment successful on Node-1"
         }
         failure {
-            rocketChatSend("Deployment failed on Node-1")
+            echo "Deployment failed on Node-1"
         }
-    }
-}
-
-// Function to send messages to Rocket.Chat using webhook
-def rocketChatSend(message) {
-    try {
-        // Send a message to Rocket.Chat using HTTP request
-        httpRequest(
-            url: "${env.ROCKET_CHAT_CHANNEL_URL}",
-            httpMode: 'POST',
-            contentType: 'APPLICATION_JSON',
-            requestBody: """ 
-            {
-                "text": "${message}"
-            }
-            """
-        )
-    } catch (Exception e) {
-        echo "Failed to send Rocket.Chat message: ${e.message}"
     }
 }
